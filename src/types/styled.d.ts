@@ -1,9 +1,8 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import 'styled-components'
-import theme from '../styles/themes/light'
+import { GeistUIThemes } from '@geist-ui/react'
 
-export type Theme = typeof theme
-
+type Theme = GeistUIThemes
 declare module 'styled-components' {
   export interface DefaultTheme extends Theme {}
 }

@@ -1,5 +1,6 @@
-import lightTheme from './light'
-import darkTheme from './dark'
-
-export const light = lightTheme
-export const dark = darkTheme
+import { GeistUIThemes } from '@geist-ui/react'
+import { DeepPartial } from '../../types/utils'
+export { default as light } from './light'
+export { default as dark } from './dark'
+export type Theme = GeistUIThemes
+export type PartialTheme = DeepPartial<Theme>

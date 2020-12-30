@@ -1,3 +1,4 @@
+import { CssBaseline } from '@geist-ui/react'
 import NextDocument, {
   DocumentContext,
   DocumentInitialProps,
@@ -12,6 +13,7 @@ class Document extends NextDocument {
   static async getInitialProps(
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
+    const baselineStyles = CssBaseline.flush()
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
 
@@ -26,6 +28,7 @@ class Document extends NextDocument {
         ...initialProps,
         styles: (
           <>
+            {baselineStyles}
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>
@@ -48,6 +51,19 @@ class Document extends NextDocument {
           />
         </Head>
         <body>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function(){
+                  if (!window.localStorage) return;
+                  if (window.localStorage.getItem('theme') === 'dark') {
+                    document.documentElement.style.background = '#000';
+                    document.body.style.background = '#000';
+                  };
+                })()
+              `
+            }}
+          />
           <Main />
           <NextScript />
         </body>
