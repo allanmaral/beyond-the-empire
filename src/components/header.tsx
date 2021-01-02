@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 export interface Meta {
-  title: string
+  title?: string
 }
 
 const toCapitalize = (name: string) => {
@@ -10,7 +10,7 @@ const toCapitalize = (name: string) => {
   return `${first.toUpperCase()}${rest}`
 }
 
-const PageHeader: React.FC<{ meta: Meta }> = ({ meta }) => (
+const PageHeader: React.FC<{ meta?: Meta }> = ({ meta = {} }) => (
   <Head>
     <title>
       {meta.title ? `${toCapitalize(meta.title)} | ` : ''}Beyond the Empire

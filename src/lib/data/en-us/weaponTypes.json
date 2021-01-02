@@ -1,19 +1,28 @@
 [
   {
     "key": "Brawling",
-    "name": "Brawling"
+    "name": "Brawling Weapons",
+    "category": true,
+    "slug": "brawling"
   },
   {
     "key": "Energy Weapon",
-    "name": "Energy Weapon"
+    "name": "Energy Weapons",
+    "category": true,
+    "slug": "energy-weapons"
   },
   {
     "key": "Explosives/Other",
-    "name": "Explosives/Other"
+    "name": "Explosives / Other",
+    "category": true,
+    "slug": "explosives-other"
   },
   {
     "key": "Lightsaber",
-    "name": "Lightsaber"
+    "name": "Lightsabers",
+    "category": true,
+    "types": ["Lightsaber", "Lightwhip"],
+    "slug": "lightsabers"
   },
   {
     "key": "Lightwhip",
@@ -21,19 +30,27 @@
   },
   {
     "key": "Melee",
-    "name": "Melee"
+    "name": "Melee Weapons",
+    "category": true,
+    "slug": "melee"
   },
   {
     "key": "Slugthrower",
-    "name": "Slugthrower"
+    "name": "Slugthrowers",
+    "category": true,
+    "slug": "slugthrowers"
   },
   {
     "key": "Thrown",
-    "name": "Thrown"
+    "name": "Thrown Weapons",
+    "category": true,
+    "slug": "throw"
   },
   {
     "key": "Tool",
-    "name": "Tool"
+    "name": "Tools",
+    "category": true,
+    "slug": "tools"
   },
   {
     "key": "Vehicle",

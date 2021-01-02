@@ -1,3 +1,3 @@
 import redirect from '../../components/redirect'
 
-export default redirect('/gears/weapons')
+export default redirect('/gears/weapons/brawling')

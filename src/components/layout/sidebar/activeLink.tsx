@@ -11,7 +11,7 @@ export interface ActiveLinkProps {
 }
 
 const ActiveLink: React.FC<ActiveLinkProps> = memo(({ href, text }) => {
-  const { pathname } = useRouter()
+  const { asPath } = useRouter()
   const [title, subtitle] = useMemo(() => {
     if (!/[\u4E00-\u9FA5]/.test(text)) return [text, null]
     return [
@@ -19,7 +19,7 @@ const ActiveLink: React.FC<ActiveLinkProps> = memo(({ href, text }) => {
       text.replace(/[^a-zA-Z]/g, '')
     ]
   }, [text])
-  const isActive = pathname === href
+  const isActive = asPath === href
 
   return (
     <LinkContainer>

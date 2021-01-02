@@ -168,4 +168,7 @@ export enum Type {
 export interface WeaponType {
   key: Type
   name: string
+  category?: boolean
+  types?: Type[]
+  slug?: string
 }

@@ -107,11 +107,68 @@ const getTable = (
   return Utils.prepareSerialize(mappedWeapons)
 }
 
+interface WeaponTableData {
+  name: string
+  tableEntries: WeaponTableEntry[]
+}
+
+const getTableData = (category: string, locale: string): WeaponTableData => {
+  const weaponType = weaponTypes[locale].find(t => t.slug === category)
+  const types = weaponType.types || [weaponType.key]
+  return {
+    name: weaponType.name,
+    tableEntries: getTable(locale, types)
+  }
+}
+
 const getDictionary = (locale: string): WeaponsDictionary => {
   return weaponsDictionaries[locale]
 }
 
+export interface WeaponCategory {
+  params: {
+    category: string
+  }
+  locale: string
+}
+
+const getCategories = (locales: string[]): WeaponCategory[] => {
+  return locales.reduce<WeaponCategory[]>(
+    (result, lc) => [
+      ...result,
+      ...Object.entries(weaponTypeDictionaries[lc])
+        .filter(([, wType]) => wType.category)
+        .map(([, wType]) => ({
+          params: {
+            category: wType.slug
+          },
+          locale: lc
+        }))
+    ],
+    []
+  )
+}
+
+// const getCategories = (locales: string[]) => {
+//   const categories = locales.reduce<WeaponCategory[]>(
+//     (result, lc) => [
+//       ...result,
+//       ...Object.entries(weaponTypeDictionaries[lc])
+//         .filter(([, wType]) => wType.category)
+//         .map(([, wType]) => ({
+//           name: wType.name,
+//           url: slugify(wType.name),
+//           types: wType.types || [wType.key],
+//           locale: lc
+//         }))
+//     ],
+//     []
+//   )
+// }
+
 export default {
   getTable,
-  getDictionary
+  getTableData,
+  getDictionary,
+  getCategories
 }

@@ -21,7 +21,7 @@ const Controls: React.FC = memo(() => {
 
   const redirectGithub = () => {
     if (typeof window !== 'undefined') {
-      window.open('https://github.com/allanmaral')
+      window.open('https://github.com/allanmaral/beyond-the-empire')
     }
   }
 

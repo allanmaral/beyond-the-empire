@@ -10,22 +10,44 @@
         "name": "Weapons",
         "children": [
           {
+            "name": "Brawling",
+            "url": "/gears/weapons/brawling",
+            "group": "Weapons"
+          },
+          {
             "name": "Energy Weapons",
-            "url": "/gears/energy-weapons",
-            "index": 5,
+            "url": "/gears/weapons/energy-weapons",
             "group": "Weapons"
           },
           {
             "name": "Explosives/Other",
-            "url": "/gears/explosives",
-            "index": 5,
+            "url": "/gears/weapons/explosives-other",
             "group": "Weapons"
           },
           {
-            "name": "Armors",
-            "url": "/gears/armors",
-            "index": 10,
-            "group": "Equipments"
+            "name": "Lightsabers",
+            "url": "/gears/weapons/lightsabers",
+            "group": "Weapons"
+          },
+          {
+            "name": "Melee",
+            "url": "/gears/weapons/melee",
+            "group": "Weapons"
+          },
+          {
+            "name": "Slugthrowers",
+            "url": "/gears/weapons/slugthrowers",
+            "group": "Weapons"
+          },
+          {
+            "name": "Thrown",
+            "url": "/gears/weapons/throw",
+            "group": "Weapons"
+          },
+          {
+            "name": "Tools",
+            "url": "/gears/weapons/tools",
+            "group": "Weapons"
           }
         ]
       },
