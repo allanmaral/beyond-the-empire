@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { breakpoints } from '../../styles/utils'
 
-const sidebarWidth = 220
+const sidebarWidth = 160
 
 export const Container = styled.div`
   min-height: calc(100vh - 108px);
@@ -19,7 +19,7 @@ export const Container = styled.div`
 `
 
 export const Aside = styled.aside<{ fixed?: boolean; expanded?: boolean }>`
-  width: 200px;
+  width: ${sidebarWidth - 20}px;
   margin-right: 20px;
   --webkit-overflow-scrolling: touch;
   flex-shrink: 0;
@@ -48,7 +48,7 @@ export const Aside = styled.aside<{ fixed?: boolean; expanded?: boolean }>`
 export const SideShadow = styled.div`
   width: ${sidebarWidth}px;
   flex-shrink: 0;
-  height: 100vh;
+  height: 100%;
 
   ${breakpoints.mobile} {
     display: none;

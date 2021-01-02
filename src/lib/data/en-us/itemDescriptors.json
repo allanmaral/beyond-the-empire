@@ -1,0 +1,1529 @@
+[
+  {
+    "key": "DAMADD",
+    "name": "Additional Damage Mod",
+    "type": "Weapon",
+    "modDesc": "Damage +1",
+    "qualDesc": "Damage +{0}"
+  },
+  {
+    "key": "DAMADDCRYS",
+    "name": "Additional Damage for Crystal Mod",
+    "type": "Weapon",
+    "modDesc": "Damage for Crystal +1",
+    "qualDesc": "Damage for Crystal +{0}"
+  },
+  {
+    "key": "DAMSUB",
+    "name": "Reduced Damage Mod",
+    "type": "Weapon",
+    "modDesc": "Damage -1",
+    "qualDesc": "Damage -{0}"
+  },
+  {
+    "key": "DAMSUBCRYS",
+    "name": "Reduced Damage for Crystal Mod",
+    "type": "Weapon",
+    "modDesc": "Damage for Crystal -1",
+    "qualDesc": "Damage for Crystal -{0}"
+  },
+  {
+    "key": "DAMSET",
+    "name": "Base Damage Mod",
+    "type": "Weapon",
+    "modDesc": "Changes Base Damage",
+    "qualDesc": "Changes Base Damage to {0}",
+    "isBase": true
+  },
+  {
+    "key": "RESDOSE",
+    "name": "Increase doses by 1 Mod",
+    "type": "Weapon",
+    "modDesc": "Increase doses by 1",
+    "qualDesc": "Increase doses by {0}"
+  },
+  {
+    "key": "HOLSTER3",
+    "name": "Hoster Weapon up to Encumbrance 3 Mod",
+    "type": "Armor",
+    "modDesc": "Holster Weapon up to Encumbrance 3",
+    "qualDesc": "Holster {0} Weapon(s) up to Encumbrance 3",
+    "chooseItemsForStorage": true,
+    "itemsForStorage": { "encLimit": 3, "typeLimit": { "type": "Weapon" } }
+  },
+  {
+    "key": "MOUNT3",
+    "name": "Mount Weapon up to Encumbrance 3 Mod",
+    "type": "Armor",
+    "modDesc": "Mount Weapon up to Encumbrance 3",
+    "qualDesc": "Mount {0} Weapon(s) up to Encumbrance 3",
+    "chooseItemsForStorage": true,
+    "itemsForStorage": { "encLimit": 3, "typeLimit": { "type": "Weapon" } }
+  },
+  {
+    "key": "MOUNTRANGED4",
+    "name": "Mount Ranged Weapon up to Encumbrance 4 Mod",
+    "type": "Armor",
+    "modDesc": "Mount Ranged Weapon up to Encumbrance 4",
+    "qualDesc": "Mount {0} Ranged Weapon(s) up to Encumbrance 4",
+    "chooseItemsForStorage": true,
+    "itemsForStorage": {
+      "encLimit": 4,
+      "typeLimit": { "type": "Weapon" },
+      "skillLimit": ["RANGHVY", "RANGLT"]
+    }
+  },
+  {
+    "key": "MOUNTADDL",
+    "name": "Increase Allowable Mounted Weapon Encumbrance by 1 Mod",
+    "type": "Armor",
+    "modDesc": "Increase Allowable Weapon Encumbrance by 1",
+    "qualDesc": "Increase Allowable Weapon Encumbrance by {0}",
+    "itemsForStorage": { "addlEnc": 1 }
+  },
+  {
+    "key": "CARRY1",
+    "name": "Carry Items up to Encumbrance 1 Mod",
+    "type": "Armor",
+    "modDesc": "Carry Items up to Encumbrance 1",
+    "qualDesc": "Carry {0} Item(s) up to Encumbrance 1",
+    "chooseItemsForStorage": true,
+    "itemsForStorage": { "encLimit": 1 }
+  },
+  {
+    "key": "CARRY0",
+    "name": "Carry Items of Encumbrance 0 Mod",
+    "type": "Armor",
+    "modDesc": "Carry Items of Encumbrance 0",
+    "qualDesc": "Carry {0} Item(s) of Encumbrance 0",
+    "chooseItemsForStorage": true,
+    "itemsForStorage": { "encLimit": 0 }
+  },
+  {
+    "key": "DFPADD",
+    "name": "Add Dark Force Point to Force Power Check Mod",
+    "modDesc": "Add One [DA] to Force Power Check",
+    "qualDesc": "Add {0} [DA] to Force Power Check"
+  },
+  {
+    "key": "LFPADD",
+    "name": "Add Light Force Point to Force Power Check Mod",
+    "modDesc": "Add One [LI] to Force Power Check",
+    "qualDesc": "Add {0} [LI] to Force Power Check"
+  },
+  {
+    "key": "FPADD",
+    "name": "Add Force Point to Force Power Check Mod",
+    "modDesc": "Add One [FP] to Force Power Check",
+    "qualDesc": "Add {0} [FP] to Force Power Check"
+  },
+  {
+    "key": "ADVADD",
+    "name": "Add Advantage to Successful Check Mod",
+    "type": "Weapon",
+    "modDesc": "Add One [ADVANTAGE] to Successful Check",
+    "qualDesc": "Add {0} [ADVANTAGE] to Successful Check"
+  },
+  {
+    "key": "SUCCADD",
+    "name": "Add Success to Check Mod",
+    "type": "Weapon",
+    "modDesc": "Add One [SU] to Check",
+    "qualDesc": "Add {0} [SU] to Check"
+  },
+  {
+    "key": "ADVADDCOM",
+    "name": "Add Advantage to Combat Check Mod",
+    "type": "Weapon",
+    "modDesc": "Add One [ADVANTAGE] to Combat Check",
+    "qualDesc": "Add {0} [ADVANTAGE] to Combat Check"
+  },
+  {
+    "key": "THRADD",
+    "name": "Add Threat to Check Mod",
+    "type": "Weapon",
+    "modDesc": "Add One [THREAT] to Check",
+    "qualDesc": "Add {0} [THREAT] to Check"
+  },
+  {
+    "key": "THRCANCEL",
+    "name": "Cancel Threat from Check Mod",
+    "type": "Weapon",
+    "modDesc": "Cancel One [THREAT] from Check",
+    "qualDesc": "Cancel {0} [THREAT] from Check"
+  },
+  {
+    "key": "UPGRADEDIFF",
+    "name": "Upgrade Difficulty of Check Mod",
+    "type": "Weapon",
+    "modDesc": "Upgrade Difficulty of Check Once",
+    "qualDesc": "Upgrade Difficulty of Check {0} time(s)"
+  },
+  {
+    "key": "ADVADDINIT",
+    "name": "Add Advantage to Initiative Check Mod",
+    "modDesc": "Add One [ADVANTAGE] to Initiative Check",
+    "qualDesc": "Add {0} [ADVANTAGE] to Initiative Check"
+  },
+  {
+    "key": "HPADD",
+    "name": "Add Hard Points Mod",
+    "modDesc": "Add One Hard Point",
+    "qualDesc": "Add {0} Hard Point(s)"
+  },
+  {
+    "key": "HPADD2",
+    "name": "Add 2 Hard Points to Vehicle Mod",
+    "type": "Vehicle",
+    "modDesc": "Add 2 Hard Points to Vehicle",
+    "qualDesc": "Add 2 Hard Point to Vehicle"
+  },
+  {
+    "key": "HPSUB",
+    "name": "Remove Hard Points from Item Mod",
+    "modDesc": "Remove One Hard Point from Item",
+    "qualDesc": "Remove {0} Hard Point(s) from Item"
+  },
+  {
+    "key": "CRITSET",
+    "name": "Base Critical Rating Mod",
+    "type": "Weapon",
+    "modDesc": "Changes Base Critical Rating",
+    "qualDesc": "Changes Base Critical Rating to {0}",
+    "isBase": true,
+    "description": "Changes Critical Rating"
+  },
+  {
+    "key": "STRAINADD",
+    "name": "Additional Strain Mod",
+    "modDesc": "Increases user's strain by one",
+    "qualDesc": "Increases user's strain by {0}"
+  },
+  {
+    "key": "RANGEADD",
+    "name": "Additional Range Mod",
+    "type": "Weapon",
+    "modDesc": "Increases weapon's range by one Range Band",
+    "qualDesc": "Increases weapon's range by {0} Range Band(s)"
+  },
+  {
+    "key": "RANGESUB",
+    "name": "Reduced Range Mod",
+    "type": "Weapon",
+    "modDesc": "Decreases weapon's range by one Range Band",
+    "qualDesc": "Decreases weapon's range by {0} Range Band(s)"
+  },
+  {
+    "key": "ENCTOTSUB",
+    "name": "Decreases Total Encumbrance Mod",
+    "modDesc": "Decrease Total Encumbrance by 1",
+    "qualDesc": "Decrease Total Encumbrance by {0}"
+  },
+  {
+    "key": "ENCSUB",
+    "name": "Decreases Encumbrance Mod",
+    "modDesc": "Decrease Encumbrance by 1",
+    "qualDesc": "Decrease Encumbrance by {0}"
+  },
+  {
+    "key": "ENCSUB2",
+    "name": "Decreases Encumbrance by 2 Mod",
+    "modDesc": "Decrease Encumbrance by 2",
+    "qualDesc": "Decrease Encumbrance by 2"
+  },
+  {
+    "key": "ENCADD",
+    "name": "Increases Encumbrance Mod",
+    "modDesc": "Increase Encumbrance by 1",
+    "qualDesc": "Increase Encumbrance by {0}"
+  },
+  {
+    "key": "ENCTADD",
+    "name": "Increases Encumbrance Threshold Mod",
+    "modDesc": "Increase Encumbrance Threshold by 1",
+    "qualDesc": "Increase Encumbrance Threshold by {0}"
+  },
+  {
+    "key": "ENCTBRADD",
+    "name": "Increases Brawn for Determining Encumbrance Threshold Mod",
+    "modDesc": "Increase Brawn for Determining Encumbrance Threshold by 1",
+    "qualDesc": "Increase Brawn for Determining Encumbrance Threshold by {0}"
+  },
+  {
+    "key": "ENCTADD3",
+    "name": "Increases Encumbrance Threshold by 3 Mod",
+    "modDesc": "Increase Encumbrance Threshold by 3",
+    "qualDesc": "Increase Encumbrance Threshold by 3"
+  },
+  {
+    "key": "ENCTSUB",
+    "name": "Decreases Encumbrance Threshold Mod",
+    "modDesc": "Decrease Encumbrance Threshold by 1",
+    "qualDesc": "Decrease Encumbrance Threshold by {0}"
+  },
+  {
+    "key": "CRITSUB",
+    "name": "Decrease Critical Mod",
+    "type": "Weapon",
+    "modDesc": "Decreases Critical by 1",
+    "qualDesc": "Decreases Critical by {0}",
+    "description": "Decreases the weapon's Crit Rating by 1 to a minimum of 1"
+  },
+  {
+    "key": "SOAKADD",
+    "name": "Increase Soak Mod",
+    "type": "Armor",
+    "modDesc": "Increases Soak value by 1",
+    "qualDesc": "Increases Soak value by {0}",
+    "description": "Increases Soak value by 1"
+  },
+  {
+    "key": "SOAKSET",
+    "name": "Set Soak Mod",
+    "type": "Armor",
+    "modDesc": "Set Soak value",
+    "qualDesc": "Set Soak value {0}",
+    "description": "Set Soak value"
+  },
+  {
+    "key": "MELEEDEFADD",
+    "name": "Increase Melee Defense Mod",
+    "type": "Armor",
+    "modDesc": "Increases Melee Defense value by 1",
+    "qualDesc": "Increases Melee Defense value by {0}",
+    "description": "Increases Melee Defense value by 1"
+  },
+  {
+    "key": "RANGEDEFADD",
+    "name": "Increase Ranged Defense Mod",
+    "type": "Armor",
+    "modDesc": "Increases Ranged Defense value by 1",
+    "qualDesc": "Increases Ranged Defense value by {0}",
+    "description": "Increases Ranged Defense value by 1"
+  },
+  {
+    "key": "DEFADD",
+    "name": "Increase Defense Mod",
+    "type": "Armor",
+    "modDesc": "Increases Defense value by 1",
+    "qualDesc": "Increases Defense value by {0}",
+    "description": "Increases Defense value by 1"
+  },
+  {
+    "key": "DEFSET",
+    "name": "Set Defense Mod",
+    "type": "Armor",
+    "modDesc": "Set Defense value",
+    "qualDesc": "Set Defense value to {0}",
+    "description": "Set Defense value"
+  },
+  {
+    "key": "DEFADDFORCE",
+    "name": "Increase Defense when Force User Mod",
+    "type": "Armor",
+    "modDesc": "Increases Defense value by 1 when Force User",
+    "qualDesc": "Increases Defense value by {0} when Force User",
+    "description": "Increases Defense value by 1 when Force User"
+  },
+  {
+    "key": "SETBACKADD",
+    "name": "Add Setback Mod",
+    "type": "Weapon",
+    "modDesc": "Add [SETBACK] to all attack checks when using this weapon",
+    "qualDesc": "Add {0} [SETBACK] to all attack checks when using this weapon",
+    "description": "Add [SETBACK] to all attack checks when using this weapon"
+  },
+  {
+    "key": "SETBACKSUB",
+    "name": "Remove Setback Mod",
+    "type": "Weapon",
+    "modDesc": "Remove [SETBACK] from all attack checks when using this weapon",
+    "qualDesc": "Remove {0} [SETBACK] from all attack checks when using this weapon",
+    "description": "Remove [SETBACK] from all attack checks when using this weapon"
+  },
+  {
+    "key": "BOOSTADD",
+    "name": "Add Boost Mod",
+    "type": "Weapon",
+    "modDesc": "Add [BOOST] to all attack checks when using this weapon",
+    "qualDesc": "Add [BOOST] to all attack checks when using this weapon",
+    "description": "Add [BOOST] to all attack checks when using this weapon"
+  },
+  {
+    "key": "DIFFSUBLONG",
+    "name": "Decrease Long Range Difficulty Mod",
+    "type": "Weapon",
+    "modDesc": "Decrease the difficulty of combat checks at long range by 1",
+    "qualDesc": "Decrease the difficulty of combat checks at long range by {0}",
+    "description": "Decrease the difficulty of combat checks at long range by."
+  },
+  {
+    "key": "DIFFSUBLONGEXT",
+    "name": "Decrease Long and Extreme Range Difficulty Mod",
+    "type": "Weapon",
+    "modDesc": "Decrease the difficulty of combat checks at long and extreme range by 1",
+    "qualDesc": "Decrease the difficulty of combat checks at long and extreme range by {0}",
+    "description": "Decrease the difficulty of combat checks at long and extreme range."
+  },
+  {
+    "key": "NOSTUN",
+    "name": "Cannot deal strain damage",
+    "type": "Weapon",
+    "modDesc": "Cannot deal strain damage",
+    "qualDesc": "Cannot deal strain damage",
+    "description": "Cannot deal strain damage",
+    "isBoolean": true
+  },
+  {
+    "key": "HEALPLUSONE",
+    "name": "Successful Medicine checks heal +1 wound Mod",
+    "modDesc": "Successful Medicine checks heal +1 wound",
+    "qualDesc": "Successful Medicine checks heal +{0} wound",
+    "description": "Successful Medicine checks heal +1 wound."
+  },
+  {
+    "key": "USERANGLT",
+    "name": "Weapon's skill changes to Ranged-Light Mod",
+    "type": "Weapon",
+    "modDesc": "Weapon's skill changes to Ranged-Light",
+    "qualDesc": "Weapon's skill changes to Ranged-Light",
+    "description": "Weapon's skill changes to Ranged-Light"
+  },
+  {
+    "key": "USERANGHVY",
+    "name": "Weapon's skill changes to Ranged-Heavy Mod",
+    "type": "Weapon",
+    "modDesc": "Weapon's skill changes to Ranged-Heavy",
+    "qualDesc": "Weapon's skill changes to Ranged-Heavy",
+    "description": "Weapon's skill changes to Ranged-Heavy"
+  },
+  {
+    "key": "ADDCRYSTNC",
+    "name": "Add Additional Crystal with no HP Cost Mod",
+    "type": "Weapon",
+    "modDesc": "Add Additional Crystal with no HP Cost",
+    "qualDesc": "Add {0} Additional Crystal(s) with no HP Cost",
+    "description": "Add additional crystal with no HP cost"
+  },
+  {
+    "key": "PRICEHALF",
+    "name": "Item is Half Price Mod",
+    "modDesc": "Item costs half its asking price",
+    "qualDesc": "Item costs half its asking price",
+    "description": "Item costs half its asking price",
+    "isBoolean": true
+  },
+  {
+    "key": "PRICE20000",
+    "name": "Add 20,000 Credits to Price Mod",
+    "type": "Vehicle",
+    "modDesc": "Add 20,000 Credits to Price",
+    "qualDesc": "Add 20,000 Credits to Price",
+    "description": "Add 20,000 Credits to Price",
+    "isBoolean": true
+  },
+  {
+    "key": "SEAL",
+    "name": "Sealable Mod",
+    "type": "Armor",
+    "modDesc": "Armor is Sealable",
+    "qualDesc": "Armor is Sealable",
+    "description": "Armor is Sealable"
+  },
+  {
+    "key": "SEALED",
+    "name": "Sealed Mod",
+    "type": "Armor",
+    "modDesc": "Armor is Sealed",
+    "qualDesc": "Armor is Sealed",
+    "description": "Armor is Sealed"
+  },
+  {
+    "key": "RANGEREDMED",
+    "name": "Reduce Range to Medium Mod",
+    "type": "Weapon",
+    "modDesc": "Reduces weapon's range to Medium, if longer",
+    "qualDesc": "Reduces weapon's range to Medium, if longer"
+  },
+  {
+    "key": "DEMONMASK",
+    "name": "Demon Mask",
+    "type": "Gear",
+    "modDesc": "Increase wound threshold by 2 if dark side Force user",
+    "qualDesc": "Increase wound threshold by 2 if dark side Force user",
+    "isBoolean": true
+  },
+  {
+    "key": "MEDFOCUS",
+    "name": "Meditation Focus",
+    "type": "Gear",
+    "modDesc": "Increase strain threshold by 2 if light side paragon",
+    "qualDesc": "Increase strain threshold by 2 if light side paragon",
+    "isBoolean": true
+  },
+  {
+    "key": "IRONFIST",
+    "name": "Iron Fists",
+    "type": "Gear",
+    "modDesc": "Armor and Brawl attacks gain Cortosis quality.  Brawl attacks gain Pierce ranks equal to Force rating",
+    "qualDesc": "Armor and Brawl attacks gain Cortosis quality.  Brawl attacks gain Pierce ranks equal to Force rating",
+    "isBoolean": true
+  },
+  {
+    "key": "FORCEADD",
+    "name": "Add Force Rating Mod",
+    "modDesc": "Add 1 to Force Rating",
+    "qualDesc": "Add {0} to Force Rating"
+  },
+  {
+    "key": "FORCESUB",
+    "name": "Subtract from Force Rating Mod",
+    "modDesc": "Subtract 1 from Force Rating",
+    "qualDesc": "Subtract {0} from Force Rating"
+  },
+  {
+    "key": "CYBERADD",
+    "name": "Add to Cybernetics Cap Mod",
+    "modDesc": "Add 1 to Cybernetics Cap",
+    "qualDesc": "Add {0} to Cybernetics Cap"
+  },
+  {
+    "key": "CYBERSUB",
+    "name": "Subtract from Cybernetics Cap Mod",
+    "modDesc": "Subtract 1 from Cybernetics Cap",
+    "qualDesc": "Subtract {0} from Cybernetics Cap"
+  },
+  {
+    "key": "CYBERNONE",
+    "name": "Does not count toward Cybernetics Cap Mod",
+    "modDesc": "Does not count toward Cybernetics Cap",
+    "qualDesc": "Does not count toward Cybernetics Cap",
+    "isBoolean": true
+  },
+  {
+    "key": "JURYADD",
+    "name": "May Select Additional Jury Rigged Option Mod",
+    "type": "Weapon",
+    "modDesc": "May select 1 additional Jury Rigged option",
+    "qualDesc": "May select {0} additional Jury Rigged option(s)"
+  },
+  {
+    "key": "SILHADD",
+    "name": "Increase Silhouette Mod",
+    "type": "Vehicle",
+    "modDesc": "Increases Silhouette value by 1",
+    "qualDesc": "Increases Silhouette value by {0}",
+    "description": "Increases Silhouette value by 1"
+  },
+  {
+    "key": "ARMORADD",
+    "name": "Increase Armor Mod",
+    "type": "Vehicle",
+    "modDesc": "Increases Armor value by 1",
+    "qualDesc": "Increases Armor value by {0}",
+    "description": "Increases Armor value by 1"
+  },
+  {
+    "key": "HANDLINGSUB",
+    "name": "Decreases Handling Mod",
+    "type": "Vehicle",
+    "modDesc": "Decreases Handling by 1",
+    "qualDesc": "Decreases Handling by {0}",
+    "description": "Decreases Handling by 1"
+  },
+  {
+    "key": "HANDLINGADD",
+    "name": "Increases Handling Mod",
+    "type": "Vehicle",
+    "modDesc": "Increases Handling by 1",
+    "qualDesc": "Increases Handling by {0}",
+    "description": "Increases Handling by 1"
+  },
+  {
+    "key": "SSTRAINSUB",
+    "name": "Decreases System Strain Mod",
+    "type": "Vehicle",
+    "modDesc": "Decreases System Strain by 1",
+    "qualDesc": "Decreases System Strain by {0}",
+    "description": "Decreases System Strain by 1"
+  },
+  {
+    "key": "SSTRAINSUB2",
+    "name": "Decreases System Strain by 2 Mod",
+    "type": "Vehicle",
+    "modDesc": "Decreases System Strain by 2",
+    "qualDesc": "Decreases System Strain by 2",
+    "description": "Decreases System Strain by 2"
+  },
+  {
+    "key": "SSTRAINADD",
+    "name": "Increases System Strain Mod",
+    "type": "Vehicle",
+    "modDesc": "Increases System Strain by 1",
+    "qualDesc": "Increases System Strain by {0}",
+    "description": "Increases System Strain by 1"
+  },
+  {
+    "key": "SSTRAINADDSIL",
+    "name": "Increases System Strain by Silhouette Mod",
+    "type": "Vehicle",
+    "modDesc": "Increases System Strain by Silhouette",
+    "qualDesc": "Increases System Strain by {0} x Silhouette",
+    "description": "Increases System Strain by Silhouette"
+  },
+  {
+    "key": "DEFZONEADD",
+    "name": "Increase Defense Zone Mod",
+    "type": "Vehicle",
+    "modDesc": "Increases Defense Zone by 1",
+    "qualDesc": "Increases Defense Zone by {0}",
+    "description": "Increases Defense Zone by 1",
+    "chooseDefZone": true
+  },
+  {
+    "key": "SMUGENC",
+    "name": "Convert 25 encumbrance capacity to smuggling compartment Mod",
+    "type": "Vehicle",
+    "modDesc": "Convert 25 encumbrance capacity to smuggling compartment",
+    "qualDesc": "Convert 25 encumbrance capacity to smuggling compartment",
+    "description": "Convert 25 encumbrance capacity to smuggling compartment"
+  },
+  {
+    "key": "HANGER",
+    "name": "Retrofits Hangar Bay Mod",
+    "type": "Vehicle",
+    "modDesc": "Retrofits Hangar Bay",
+    "qualDesc": "Retrofits Hangar Bay",
+    "description": "Retrofits Hangar Bay"
+  },
+  {
+    "key": "HANGERSIZE",
+    "name": "Increase Silhouette Capacity of Hangar Bay by 1 Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Silhouette Capacity of Hangar Bay by 1",
+    "qualDesc": "Increase Silhouette Capacity of Hangar Bay by {0}",
+    "description": "Increase Silhouette Capacity of Hangar Bay by 1"
+  },
+  {
+    "key": "HYPERDRIVESUB",
+    "name": "Decreases Hyperdrive Class by 1, to a minimum of 1 Mod",
+    "type": "Vehicle",
+    "modDesc": "Decreases Hyperdrive Class by 1, to a minimum of 1",
+    "qualDesc": "Decreases Hyperdrive Class by {0}, to a minimum of 1",
+    "description": "Decreases Hyperdrive Class by 1"
+  },
+  {
+    "key": "HYPERDRIVESUB5",
+    "name": "Decreases Hyperdrive Class by 1, to a minimum of .5 Mod",
+    "type": "Vehicle",
+    "modDesc": "Decreases Hyperdrive Class by 1, to a minimum of .5",
+    "qualDesc": "Decreases Hyperdrive Class by {0}, to a minimum of .5",
+    "description": "Decreases Hyperdrive Class by 1"
+  },
+  {
+    "key": "HYPERDRIVEBACKSUB5",
+    "name": "Decreases Backup Hyperdrive Class by 1, to a minimum of .5 Mod",
+    "type": "Vehicle",
+    "modDesc": "Decreases Backup Hyperdrive Class by 1, to a minimum of .5",
+    "qualDesc": "Decreases Backup Hyperdrive Class by {0}, to a minimum of .5",
+    "description": "Decreases Backup Hyperdrive Class by 1"
+  },
+  {
+    "key": "HYPERDRIVEBACKSUB",
+    "name": "Decreases Backup Hyperdrive Class by 1, to a minimum of 1 Mod",
+    "type": "Vehicle",
+    "modDesc": "Decreases Backup Hyperdrive Class by 1, to a minimum of 1",
+    "qualDesc": "Decreases Backup Hyperdrive Class by {0}, to a minimum of 1",
+    "description": "Decreases Backup Hyperdrive Class by 1"
+  },
+  {
+    "key": "HYPERDRIVEADD8",
+    "name": "Add Class 8 Hyperdrive Mod",
+    "type": "Vehicle",
+    "modDesc": "Add Class 8 Hyperdrive",
+    "qualDesc": "Add Class 8 Hyperdrive",
+    "description": "Add Class 8 Hyperdrive",
+    "isBoolean": true
+  },
+  {
+    "key": "HYPERDRIVEADD4",
+    "name": "Add Class 4 Hyperdrive Mod",
+    "type": "Vehicle",
+    "modDesc": "Add Class 4 Hyperdrive",
+    "qualDesc": "Add Class 4 Hyperdrive",
+    "description": "Add Class 4 Hyperdrive",
+    "isBoolean": true
+  },
+  {
+    "key": "HYPERDRIVEADDBACK14",
+    "name": "Add Class 14 Backup Hyperdrive Mod",
+    "type": "Vehicle",
+    "modDesc": "Add Class 14 Backup Hyperdrive",
+    "qualDesc": "Add Class 14 Backup Hyperdrive",
+    "description": "Add Class 14 Backup Hyperdrive",
+    "isBoolean": true
+  },
+  {
+    "key": "MASSIVEADD",
+    "name": "Add to Massive Mod",
+    "type": "Vehicle",
+    "modDesc": "Add to Massive Setting",
+    "qualDesc": "Add {0} to Massive Setting"
+  },
+  {
+    "key": "MASSIVESET",
+    "name": "Change Massive Mod",
+    "type": "Vehicle",
+    "modDesc": "Changes Massive Setting",
+    "qualDesc": "Changes Massive Setting to {0}"
+  },
+  {
+    "key": "ADDALT50",
+    "name": "Increase Altitude by 50 Mod",
+    "type": "Vehicle",
+    "modDesc": "Increases Altitude by 50",
+    "qualDesc": "Increases Altitude by 50"
+  },
+  {
+    "key": "SETDEFFORE",
+    "name": "Sets Forward Defense Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Forward Defense",
+    "qualDesc": "Sets Forward Defense to {0}"
+  },
+  {
+    "key": "SETDEFAFT",
+    "name": "Sets Aft Defense Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Aft Defense",
+    "qualDesc": "Sets Aft Defense to {0}"
+  },
+  {
+    "key": "SETDEFPORT",
+    "name": "Sets Port Defense Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Port Defense",
+    "qualDesc": "Sets Port Defense to {0}"
+  },
+  {
+    "key": "SETDEFSTAR",
+    "name": "Sets Starboard Defense Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Starboard Defense",
+    "qualDesc": "Sets Starboard Defense to {0}"
+  },
+  {
+    "key": "SETDEFFORECRAFT",
+    "name": "Sets Forward Defense When Crafting Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Forward Defense When Crafting",
+    "qualDesc": "Sets Forward Defense When Crafting to {0}",
+    "forCrafting": true
+  },
+  {
+    "key": "SETDEFAFTCRAFT",
+    "name": "Sets Aft Defense When Crafting Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Aft Defense When Crafting",
+    "qualDesc": "Sets Aft Defense When Crafting to {0}",
+    "forCrafting": true
+  },
+  {
+    "key": "SETDEFPORTCRAFT",
+    "name": "Sets Port Defense When Crafting Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Port Defense When Crafting",
+    "qualDesc": "Sets Port Defense When Crafting to {0}",
+    "forCrafting": true
+  },
+  {
+    "key": "SETDEFSTARCRAFT",
+    "name": "Sets Starboard Defense When Crafting Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Starboard Defense When Crafting",
+    "qualDesc": "Sets Starboard Defense When Crafting to {0}",
+    "forCrafting": true
+  },
+  {
+    "key": "SETHAND",
+    "name": "Sets Handling Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Handling",
+    "qualDesc": "Sets Handling to {0}"
+  },
+  {
+    "key": "SETHANDCRAFT",
+    "name": "Sets Handling When Crafting Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Handling When Crafting",
+    "qualDesc": "Sets Handling When Crafting to {0}",
+    "forCrafting": true
+  },
+  {
+    "key": "SETSSTRAIN",
+    "name": "Sets System Strain Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets System Strain",
+    "qualDesc": "Sets System Strain to {0}"
+  },
+  {
+    "key": "SETSSTRAINSIL",
+    "name": "Sets System Strain to Silhouette Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets System Strain to Silhouette",
+    "qualDesc": "Sets System Strain to {0} x Silhouette"
+  },
+  {
+    "key": "SETSSTRAINSILCRAFT",
+    "name": "Sets System Strain When Crafting to Silhouette Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets System Strain When Crafting to Silhouette",
+    "qualDesc": "Sets System Strain When Crafting to {0} x Silhouette",
+    "forCrafting": true
+  },
+  {
+    "key": "SETSPEED",
+    "name": "Sets Speed Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Speed",
+    "qualDesc": "Sets Speed to {0}"
+  },
+  {
+    "key": "SETSPEEDCRAFT",
+    "name": "Sets Speed When Crafting Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Speed When Crafting",
+    "qualDesc": "Sets Speed When Crafting to {0}",
+    "forCrafting": true
+  },
+  {
+    "key": "SETARMOR",
+    "name": "Sets Armor Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Armor value",
+    "qualDesc": "Sets Armor value to {0}"
+  },
+  {
+    "key": "SETARMORCRAFT",
+    "name": "Sets Armor Value When Crafting Mod",
+    "type": "Vehicle",
+    "modDesc": "Sets Armor Value",
+    "qualDesc": "Sets Armor Value When Crafting to {0}",
+    "forCrafting": true
+  },
+  {
+    "key": "ADDDEFFORE",
+    "name": "Increase Forward Defense Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Forward Defense by 1",
+    "qualDesc": "Increase Forward Defense by {0}"
+  },
+  {
+    "key": "ADDDEFPORT",
+    "name": "Increase Port Defense Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Port Defense by 1",
+    "qualDesc": "Increase Port Defense by {0}"
+  },
+  {
+    "key": "ADDDEFSTAR",
+    "name": "Increase Starboard Defense Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Starboard Defense by 1",
+    "qualDesc": "Increase Starboard Defense by {0}"
+  },
+  {
+    "key": "ADDDEFAFT",
+    "name": "Increase Aft Defense Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Aft Defense by 1",
+    "qualDesc": "Increase Aft Defense by {0}"
+  },
+  {
+    "key": "SPEEDSUB",
+    "name": "Decrease Speed Mod",
+    "type": "Vehicle",
+    "modDesc": "Decrease Speed by 1",
+    "qualDesc": "Decrease Speed by {0}",
+    "description": "Decreases Speed by 1"
+  },
+  {
+    "key": "SPEEDADD",
+    "name": "Increase Speed Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Speed by 1",
+    "qualDesc": "Increase Speed by {0}",
+    "description": "Increase Speed by 1"
+  },
+  {
+    "key": "SPEEDADD2",
+    "name": "Increases Speed by 2 Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Speed by 2",
+    "qualDesc": "Increase Speed by 2",
+    "description": "Increases Speed by 2"
+  },
+  {
+    "key": "SRANGEADD",
+    "name": "Additional Sensor Range Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase vehicle's sensor range by one Range Band",
+    "qualDesc": "Increase vehicle's sensor range by {0} Range Band(s)"
+  },
+  {
+    "key": "SRANGESUB",
+    "name": "Reduced Sensor Range Mod",
+    "type": "Vehicle",
+    "modDesc": "Decrease vehicle's sensor range by one Range Band",
+    "qualDesc": "Decrease vehicle's sensor range by {0} Range Band(s)"
+  },
+  {
+    "key": "CRANGEADD",
+    "name": "Additional Comms Range Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase vehicle's communications range by one Range Band",
+    "qualDesc": "Increase vehicle's communications range by {0} Range Band(s)"
+  },
+  {
+    "key": "CRANGESUB",
+    "name": "Reduced Comms Range Mod",
+    "type": "Vehicle",
+    "modDesc": "Decrease vehicle's communications range by one Range Band",
+    "qualDesc": "Decrease vehicle's communications range by {0} Range Band(s)"
+  },
+  {
+    "key": "HULLADDSIL",
+    "name": "Increase Hull Trauma by Silhouette Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Hull Trauma by Silhouette",
+    "qualDesc": "Increase Hull Trauma by {0} x Silhouette",
+    "description": "Increase Hull Trauma by Silhouette"
+  },
+  {
+    "key": "HULLADD",
+    "name": "Increase Hull Trauma Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Hull Trauma by 1",
+    "qualDesc": "Increase Hull Trauma by {0}",
+    "description": "Increases Hull Trauma by 1"
+  },
+  {
+    "key": "HULLADD3",
+    "name": "Increase Hull Trauma by 3 Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Hull Trauma by 3",
+    "qualDesc": "Increase Hull Trauma by 3",
+    "description": "Increase Hull Trauma by 3"
+  },
+  {
+    "key": "HULLSUB",
+    "name": "Decrease Hull Trauma Mod",
+    "type": "Vehicle",
+    "modDesc": "Decrease Hull Trauma by 1",
+    "qualDesc": "Decrease Hull Trauma by {0}",
+    "description": "Decreases Hull Trauma by 1"
+  },
+  {
+    "key": "PASSADD",
+    "name": "Increase Passenger Capacity Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Passenger Capacity by 1",
+    "qualDesc": "Increases Passenger Capacity by {0}",
+    "description": "Increase Passenger Capacity by 1"
+  },
+  {
+    "key": "PASSADDCRAFT",
+    "name": "Increase Passenger Capacity When Crafting Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Passenger Capacity When Crafting by 1",
+    "qualDesc": "Increases Passenger Capacity When Crafting by {0}",
+    "description": "Increase Passenger Capacity When Crafting by 1",
+    "forCrafting": true
+  },
+  {
+    "key": "PASSADD2",
+    "name": "Increase Passenger Capacity by 2 Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Passenger Capacity by 2",
+    "qualDesc": "Increases Passenger Capacity by 2",
+    "description": "Increase Passenger Capacity by 2"
+  },
+  {
+    "key": "PASSADD10",
+    "name": "Increase Passenger Capacity by 10 Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Passenger Capacity by 10",
+    "qualDesc": "Increases Passenger Capacity by 10",
+    "description": "Increase Passenger Capacity by 10"
+  },
+  {
+    "key": "PASSADDSIL",
+    "name": "Increase Passenger Capacity by Silhouette Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Passenger Capacity by Silhouette",
+    "qualDesc": "Increases Passenger Capacity by {0} x Silhouette",
+    "description": "Increase Passenger Capacity by Silhouette"
+  },
+  {
+    "key": "PASSSUB",
+    "name": "Decrease Passenger Capacity Mod",
+    "type": "Vehicle",
+    "modDesc": "Decrease Passenger Capacity by 1",
+    "qualDesc": "Decreases Passenger Capacity by {0}",
+    "description": "Decrease Passenger Capacity by 1"
+  },
+  {
+    "key": "ADDSILWEAP",
+    "name": "Vehicle can carry a weapon for craft 1 silhouette larger Mod",
+    "type": "Vehicle",
+    "modDesc": "Vehicle can carry a weapon for craft 1 silhouette larger",
+    "qualDesc": "Vehicle can carry a weapon for craft {0} silhouette larger",
+    "description": "Vehicle can carry a weapon for craft 1 silhouette larger",
+    "chooseVehicleWeapon": true
+  },
+  {
+    "key": "BOARDTUBETIME",
+    "name": "Decrease time to cut through hull by 1 round Mod",
+    "type": "Vehicle",
+    "modDesc": "Decrease time to cut through hull by 1 round",
+    "qualDesc": "Decrease time to cut through hull by {0} round(s)",
+    "description": "Decrease time to cut through hull by 1 round"
+  },
+  {
+    "key": "DAMWEAPSYSADD",
+    "name": "Increase damage of weapon system by one Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase damage of weapon system by 1",
+    "qualDesc": "Increase damage of weapon system by {0}",
+    "description": "Increase damage of weapon system by one",
+    "chooseExistingVehicleWeapon": true
+  },
+  {
+    "key": "RETRACTWEAPSYSTEM",
+    "name": "Retractable Weapon System",
+    "type": "Vehicle",
+    "modDesc": "Retractable Weapon System",
+    "qualDesc": "Retractable Weapon System",
+    "description": "Retractable Weapon System",
+    "chooseExistingVehicleWeapon": true
+  },
+  {
+    "key": "ENCCADDSIL",
+    "name": "Increases Encumbrance Capacity by Silhouette Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Encumbrance Capacity by Silhouette",
+    "qualDesc": "Increase Encumbrance Capacity by {0} x Silhouette"
+  },
+  {
+    "key": "ENCCADD",
+    "name": "Increases Encumbrance Capacity Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Encumbrance Capacity by 1",
+    "qualDesc": "Increase Encumbrance Capacity by {0}"
+  },
+  {
+    "key": "ENCCADDCRAFT",
+    "name": "Increases Encumbrance Capacity When Crafting Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Encumbrance Capacity When Crafting by 1",
+    "qualDesc": "Increase Encumbrance Capacity When Crafting by {0}",
+    "forCrafting": true
+  },
+  {
+    "key": "ENCCADD100",
+    "name": "Increases Encumbrance Capacity by 100 Mod",
+    "type": "Vehicle",
+    "modDesc": "Increase Encumbrance Capacity by 100",
+    "qualDesc": "Increase Encumbrance Capacity by 100"
+  },
+  {
+    "key": "ENCCSUB",
+    "name": "Decreases Encumbrance Capacity Mod",
+    "type": "Vehicle",
+    "modDesc": "Decrease Encumbrance Capacity by 1",
+    "qualDesc": "Decrease Encumbrance Capacity by {0}"
+  },
+  {
+    "key": "UPGUNN",
+    "name": "Upgrade ability of Gunnery checks Mod",
+    "type": "Vehicle",
+    "modDesc": "Upgrade ability of Gunnery checks by 1",
+    "qualDesc": "Upgrade ability of Gunnery checks {0}"
+  },
+  {
+    "key": "VAKSAI",
+    "name": "Replace Light Blaster Cannons with Light Laser Cannons Mod",
+    "type": "Vehicle",
+    "modDesc": "Replace Light Blaster Cannons with Light Laser Cannons",
+    "qualDesc": "Replace Light Blaster Cannons with Light Laser Cannons",
+    "weaponUpgrades": [
+      {
+        "weapKey": "LASERLT",
+        "replacementIndex": 0,
+        "properties": {
+          "location": "WingMounted",
+          "qualities": [{ "key": "LINKED", "count": 1 }]
+        }
+      }
+    ]
+  },
+  {
+    "key": "ACCURATE",
+    "name": "Accurate Quality",
+    "type": "Weapon",
+    "modDesc": "Accurate {0}",
+    "qualDesc": "Accurate {0}",
+    "description": "Accurate weapons are easier to aim or wield, whether through design or technology. For each level of this trait, the attacker adds [BO] to his attack dice pools while using this weapon.",
+    "sources": [
+      { "book": "Edge of the Empire Core Rulebook" },
+      { "book": "Age of Rebellion Core Rulebook" },
+      { "book": "Force and Destiny Core Rulebook" }
+    ],
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "AUTOFIRE",
+    "name": "Auto-Fire Quality",
+    "type": "Weapon",
+    "modDesc": "Auto Fire",
+    "qualDesc": "Auto Fire",
+    "description": "A weapon with Auto-fire can be set to shoot in rapid succession and potentially spray an area with bolts, flechettes, slugs, or other types of projectiles. The advantage in using Auto-fire is that it has the chance to hit multiple targets or hit a single target multiple times.\n\n[P]Attacking with a weapon on Auto-fire is generally less accurate and the attacker must increase the difficulty of the attack check by [DI]. The user may choose to not use the Auto-fire quality on a weapon; in this case, he cannot trigger the quality but also does not suffer the aforementioned penalty.\n\n[P]If the attack hits, the attacker can trigger Auto-fire by spending [AD][AD]. Auto-fire can be triggered multiple times. Each time the attacker triggers auto-fire, it deals an additional hit to the target. Each of these counts as an additional hit from that weapon, and each hit deals base damage plus the number of uncanceled [SU] on the check.\n\n[P]These additional hits can be allocated to the target, or to other targets within range of the weapon. If the attacker wishes to hit multiple targets, he must decide to do so before making the check. Furthermore, if he wishes to hit multiple targets, his initial target must always be the target with the highest difficulty and highest defense (if this is two separate targets, the GM chooses which target is his initial target). The initial hit must always be against the initial target, subsequent hits generated can be allocated to any of the other designated targets.\n\n[P]Auto-fire weapons can also activate one Critical Injury for each hit generated on the attack per the normal cost; the Critical must target the target of the specific hit.",
+    "isBoolean": true,
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "BREACH",
+    "name": "Breach Quality",
+    "type": "Weapon",
+    "modDesc": "Breach {0}",
+    "qualDesc": "Breach {0}",
+    "description": "Weapons with Breach burn through the toughest armor, and are often heavy weapons or starship weapons.\n\n[P]Breach weapons ignore one point of Armor for every rating of Breach (meaning they also ignore 10 points of soak for every rating of Breach).",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "BURN",
+    "name": "Burn Quality",
+    "type": "Weapon",
+    "modDesc": "Burn {0}",
+    "qualDesc": "Burn {0}",
+    "description": "Weapons with Burn inflict damage over time. If the attack is successful, the target continues to suffer the weapon’s base damage for a number of rounds equal to the weapon’s Burn rating. Damage is applied at the start of each of the target’s actions.\n\n[P]A victim might be able to stop the damage by rolling around on the ground and making an Agility check as an Coordination check action. This is an [B]Average ([DI][DI]) Coordination check[b] on hard surfaces such as the hall of a spaceship, or an [B]Easy ([DI]) Coordination check[b] on grass or soft ground. Jumping into a body of water stops the damage immediately. Both situations assume the flame is from actual combustion rather than a chemical reaction. With the latter, there is usually little the victim can do.",
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "BLAST",
+    "name": "Blast Quality",
+    "type": "Weapon",
+    "modDesc": "Blast {0}",
+    "qualDesc": "Blast {0}",
+    "description": "The weapon has a large spread, an explosive blast, or similar area of effect, like the detonation of a grenade or a warhead fired from a missile launcher. If the attack is successful and Blast activates, each character (friend or foe) Engaged with the original target suffers wounds equal to the weapon’s Blast rating (plus an additional wound per Success as usual).\n\n[P]In a relatively small and enclosed area, the Game Master might decide that everyone in the room suffers damage.\n\n[P]If the Blast quality doesn’t activate, the ordnance still detonates, but bad luck or poor aim on the part of the firer (or quick reactions on the part of the victims) means the explosion may not catch anyone else in its radius. However, the user may also trigger Blast if the attack misses, by spending [AD][AD][AD]. In this case, the original target and every target engaged with the original target suffers damage equal to the Blast rating of the weapon.",
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "CONCUSSIVE",
+    "name": "Concussive Quality",
+    "type": "Weapon",
+    "modDesc": "Concussive {0}",
+    "qualDesc": "Concussive {0}",
+    "description": "The weapon’s attack can leave the target shell­-shocked from mighty blows or punishing shockwaves, unable to perform any but the most basic actions. The target is staggered (see page 218) for a number of rounds equal to the weapon’s Concussive rating. A staggered target cannot perform actions.",
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "CORTOSIS",
+    "name": "Cortosis Quality",
+    "modDesc": "Cortosis",
+    "qualDesc": "Cortosis",
+    "description": "Cortosis is an ore found primarily in the Outer Rim. It is extremely rare and valuable, and was used primarily during the Clone Wars against the Jedi knights. There are two varieties of Cortosis ore. The rarest versions can actually short out a lightsaber’s blade, causing it to fail temporarily. The far more common Cortosis ore is still a miraculous substance, because when molded into armor, it forms an interlocking molecular bond that is extremely resistant to energy weapons.\n\n[P]Weapons with the Cortosis quality are immune to the Sunder quality. Armor with the Cortosis quality makes the wearer’s soak immune to the Pierce and Breach qualities.",
+    "isBoolean": true,
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "CUMBERSOME",
+    "name": "Cumbersome Quality",
+    "type": "Weapon",
+    "modDesc": "Cumbersome {0}",
+    "qualDesc": "Cumbersome {0}",
+    "description": "A Cumbersome weapon is large, unwieldy, awkward, or heavy. To wield a Cumbersome weapon properly, the character needs a Brawn characteristic equal to or greater than the weapon’s Cumbersome rating. For each point of Brawn the character is deficient, he must increase the difficulty of all checks made while using the weapon by one.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "DEFENSIVE",
+    "name": "Defensive Quality",
+    "type": "Weapon",
+    "modDesc": "Defensive {0}",
+    "qualDesc": "Defensive {0}",
+    "description": "Defensive weapons are particularly good at fending off incoming melee attacks. A character wielding a weapon with the Defensive quality increases his melee defense by the weapon’s Defensive rating.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "DEFLECTION",
+    "name": "Deflection Quality",
+    "modDesc": "Deflection {0}",
+    "qualDesc": "Deflection {0}",
+    "description": "An item with the Deflection quality increases the wearer’s ranged defense equal to its Deflection rating.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "DISORIENT",
+    "name": "Disorient Quality",
+    "type": "Weapon",
+    "modDesc": "Disorient {0}",
+    "qualDesc": "Disorient {0}",
+    "description": "A weapon with Disorient can daze an opponent. When Disorient is triggered, the target is disoriented (see page 218) for a number of rounds equal to the weapon’s Disorient rating. A disoriented target adds [SE] to all skill checks he performs.",
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "ENSNARE",
+    "name": "Ensnare Quality",
+    "type": "Weapon",
+    "modDesc": "Ensnare {0}",
+    "qualDesc": "Ensnare {0}",
+    "description": "A weapon with Ensnare binds a foe and restricts his movements. When Ensnare is triggered, the target is immobilized (see page 218) for a number of rounds equal to the weapon’s Ensnare rating. An Ensnared target may attempt a [B]Hard ([DI][DI][DI]) Athletics check[b] as his action on his turn to break free from the effect. An immobilized target cannot perform maneuvers.",
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "GUIDED",
+    "name": "Guided Quality",
+    "type": "Weapon",
+    "modDesc": "Guided {0}",
+    "qualDesc": "Guided {0}",
+    "description": "Certain types of projectiles may benefit from course alterations after being fired—such as guided missiles. If a character misses while firing a Guided weapon and if Guided activates, he may make an attack check at the end of the round. The difficulty of the check is calculated by comparing the weapon’s silhouette of 0 to the silhouette of the target (see page 235), and the check’s Ability dice equal the weapon’s Guided rating. If the test is successful, the weapon strikes the target and damage is dealt normally.\n\n[P]Guided requires [AD][AD][AD] to activate, unless otherwise specified in the weapon’s description. Remember, the Guided effect can activate on its subsequent attacks, representing the projectile continuing to track the target.\n\n[P]“Spoofing” is a countermeasure designed to work against the particular projectile—such as flares designed to draw off an infrared missile. Spoofing directly increases the defense of the target against attacks with the Guided quality.",
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "KNOCKDOWN",
+    "name": "Knockdown Quality",
+    "type": "Weapon",
+    "modDesc": "Knockdown",
+    "qualDesc": "Knockdown",
+    "description": "When knockdown triggers, the target is knocked prone.\n\n[P]Unless specified otherwise, Knockdown requires [AD][AD] to trigger, plus one additional [AD] per silhouette beyond one.",
+    "isBoolean": true,
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "INACCURATE",
+    "name": "Inaccurate Quality",
+    "type": "Weapon",
+    "modDesc": "Inaccurate {0}",
+    "qualDesc": "Inaccurate {0}",
+    "description": "Inaccurate weapons are weapons of a shoddy or inferior construction which means they are less likely to be accurate or precise. Alternatively, the weapon’s nature may inhibit accuracy. Inaccurate weapons add [SE] to the attacker’s dice pool equal to their Inaccurate rating.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "INFERIOR",
+    "name": "Inferior Quality",
+    "modDesc": "Inferior",
+    "qualDesc": "Inferior",
+    "description": "An Inferior item is a lackluster example of its kind, representing shoddy and poor craftsmanship. An Inferior weapon generates automatic [TH] on all checks related to its use, and has its base damage decreased by one. Inferior armor has its encumbrance increased by one and its defense decreased by one. If it does not have defense, decrease its soak value by one to a minimum of zero.",
+    "isBoolean": true,
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "ION",
+    "name": "Ion Quality",
+    "type": "Weapon",
+    "modDesc": "Ion",
+    "qualDesc": "Ion",
+    "description": "Ion weapons are designed to affect electrical systems as opposed to dealing raw damage. They are fitted to ships to knock out opponents’ shields, sensors, and engines. They are shorter range than laser weapons, and deal larger amounts of damage, but their damage is dealt to the target as system strain (usually on vehicles). It is still reduced by armor and soak. Droids are affected by ion weapons, taking damage to their strain threshold.",
+    "isBoolean": true,
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "LIMITEDAMMO",
+    "name": "Limited Ammo Quality",
+    "type": "Weapon",
+    "modDesc": "Limited Ammo {0}",
+    "qualDesc": "Limited Ammo {0}",
+    "description": "Some weapons fire particularly large or complex projectiles that cost significant amounts of credits, or are themselves a complete weapon that once launched is expended. A weapon with the Limited Ammo quality may be used to make a number of attacks equal to its Limited Ammo rating before it must be reloaded with a maneuver. In addition, each shot expends one of a limited number of rounds of ammo, which must be purchased or otherwise obtained before the weapon can be used. This also applies to grenades and other “one use” weapons which have the Limited Ammo 1 quality (here, the user is not “reloading” the grenade, but drawing another to use—but mechanically they are equivalent).",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "LINKED",
+    "name": "Linked Quality",
+    "type": "Weapon",
+    "modDesc": "Linked {0}",
+    "qualDesc": "Linked {0}",
+    "description": "Some weapons, like the laser cannons fitted to the Z-95 Headhunter, are designed to fire together at the same target. This increases the possibility of a hit as well as the damage dealt. When firing a linked weapon, on a successful attack, the weapon deals one hit.\n\n[P]The wielder may spend [AD][AD] to gain an additional hit, and may do so a number of times equal to the weapon’s linked rating. Additional hits from linked weapons may only be applied against the original target. Each hit deals the weapon’s base damage plus total [SU] scored on the check.",
+    "isBoolean": false,
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "PIERCE",
+    "name": "Pierce Quality",
+    "type": "Weapon",
+    "modDesc": "Pierce {0}",
+    "qualDesc": "Pierce {0}",
+    "description": "An attack made with this weapon ignores one point of soak for each rank of Pierce. If the weapon has more ranks of Pierce than the target’s total soak, it completely ignores the target’s soak. For example, Pierce 3 against a soak of 2 ignores 2 points of soak, but the extra “point” of Pierce has no further effect.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "PREPARE",
+    "name": "Prepare Quality",
+    "type": "Weapon",
+    "modDesc": "Prepare {0}",
+    "qualDesc": "Prepare {0}",
+    "description": "Weapons with this quality require time to set up before being used. The user must perform a number of preparation maneuvers equal to the weapon’s Prepare rating before making attacks with that weapon.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "SLOWFIRING",
+    "name": "Slow-Firing Quality",
+    "type": "Weapon",
+    "modDesc": "Slow-Firing {0}",
+    "qualDesc": "Slow-Firing {0}",
+    "description": "Slow-Firing weapons tend to be large, heavy, emplacement-mounted weapons like the turbolasers found on capital ships, or planetary defense ion cannons. While they deal incredible damage, they need time to recharge or cool down between shots. A weapon’s Slow-Firing rating dictates how quickly the weapon can be fired after an attack. For example, a heavy turbolaser with Slow-Firing 2 must wait two Rounds after being fired before it can be fired again.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "STAGGER",
+    "name": "Stagger Quality",
+    "type": "Weapon",
+    "modDesc": "Stagger {0}",
+    "qualDesc": "Stagger {0}",
+    "isQuality": true
+  },
+  {
+    "key": "STUN",
+    "name": "Stun Quality",
+    "type": "Weapon",
+    "modDesc": "Stun {0}",
+    "qualDesc": "Stun {0}",
+    "description": "A weapon with Stun causes strain to the target. When the Stun quality is activated, it inflicts strain equal to the weapon’s Stun rating.",
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "STUNDROID",
+    "name": "Stun (Droid Only) Quality",
+    "type": "Weapon",
+    "modDesc": "Stun {0} (Droid Only)",
+    "qualDesc": "Stun {0} (Droid Only)",
+    "description": "A weapon with Stun causes strain to the target. When the Stun quality is activated, it inflicts strain equal to the weapon’s Stun rating.",
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "STUNSETTING",
+    "name": "Stun Setting Quality",
+    "type": "Weapon",
+    "modDesc": "Stun Setting",
+    "qualDesc": "Stun Setting",
+    "description": "Some weapons deal Stun damage instead of regular damage. In this case, the weapon deals damage as strain instead of wounds. This damage is still reduced by a target’s soak.\n\n[P]A variant of this is a Stun setting. As a free action, the wielder can choose to switch the setting of his weapon to “Stun.” In this case, it does stun damage as described above. When weapons with a stun setting are used to deal stun damage, their range changes to short and cannot be increased.",
+    "isBoolean": true,
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "STUNDAMAGE",
+    "name": "Stun Damage Quality",
+    "type": "Weapon",
+    "modDesc": "Stun Damage",
+    "qualDesc": "Stun Damage",
+    "description": "Some weapons deal Stun damage instead of regular damage. In this case, the weapon deals damage as strain instead of wounds. This damage is still reduced by a target’s soak.\n\n[P]A variant of this is a Stun setting. As a free action, the wielder can choose to switch the setting of his weapon to “Stun.” In this case, it does stun damage as described above. When weapons with a stun setting are used to deal stun damage, their range changes to short and cannot be increased.",
+    "isBoolean": true,
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "STUNDAMAGEDROID",
+    "name": "Stun Damage (Droid Only) Quality",
+    "type": "Weapon",
+    "modDesc": "Stun Damage (Droid Only)",
+    "qualDesc": "Stun Damage (Droid Only)",
+    "description": "Some weapons deal Stun damage instead of regular damage. In this case, the weapon deals damage as strain instead of wounds. This damage is still reduced by a target’s soak.\n\n[P]A variant of this is a Stun setting. As a free action, the wielder can choose to switch the setting of his weapon to “Stun.” In this case, it does stun damage as described above. When weapons with a stun setting are used to deal stun damage, their range changes to short and cannot be increased.",
+    "isBoolean": true,
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "SUNDER",
+    "name": "Sunder Quality",
+    "type": "Weapon",
+    "modDesc": "Sunder",
+    "qualDesc": "Sunder",
+    "description": "When activated, the attacker chooses one item openly wielded by the target (such as a weapon, shield, or item on a belt). That item is damaged one step: to Minor if undamaged, from Minor to Moderate, or from Moderate to Major. If a weapon already suffering Major damage is the target of a successful Sunder, it is destroyed.\n\n[P]Sunder requires [AD] to activate. If activated multiple times in the same attack, each can be applied against the same weapon, potentially taking a weapon from undamaged to destroyed in a single attack.",
+    "isBoolean": true,
+    "custom": "DescOnly",
+    "isQuality": true,
+    "isActiveQuality": true
+  },
+  {
+    "key": "SUPERIOR",
+    "name": "Superior Quality",
+    "modDesc": "Superior",
+    "qualDesc": "Superior",
+    "description": "A Superior item is a sterling example of its kind, representing masterful craftsmanship. A Superior weapon generates automatic [AD] on all checks related to its use, and has its base damage increased by one. Superior armor has its encumbrance reduced by one and its soak value increased by one.",
+    "isBoolean": true,
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "TRACTOR",
+    "name": "Tractor Quality",
+    "type": "Weapon",
+    "modDesc": "Tractor {0}",
+    "qualDesc": "Tractor {0}",
+    "description": "Instead of firing searing beams of laser fire or crackling ion discharges, this weapon fires relatively harmless electromagnetic beams that ensnare ships and hold them fast in space. Tractor beams, like all weapons, are fired at their target using a the appropriate skill check (generally Gunnery) with all suitable modifiers. Once the weapon hits its target, the target may not move unless its pilot makes a successful Piloting check with a difficulty based on the tractor beam’s rating. The tractor beam’s rating is always noted in parentheses in the weapon’s stats next to the quality.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "VICIOUS",
+    "name": "Vicious Quality",
+    "type": "Weapon",
+    "modDesc": "Vicious {0}",
+    "qualDesc": "Vicious {0}",
+    "description": "When this weapon scores a critical injury or hit, the character adds ten times the Vicious rating to the critical roll. With Vicious 3, for example, the victim adds +30 to his critical hit result.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "VICIOUSDROID",
+    "name": "Vicious (Droid Only) Quality",
+    "type": "Weapon",
+    "modDesc": "Vicious (Droid Only) {0}",
+    "qualDesc": "Vicious (Droid Only) {0}",
+    "description": "When this weapon scores a critical injury or hit, the character adds ten times the Vicious rating to the critical roll. With Vicious 3, for example, the victim adds +30 to his critical hit result.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "UNWIELDY",
+    "name": "Unwieldy Quality",
+    "type": "Weapon",
+    "modDesc": "Unwieldy {0}",
+    "qualDesc": "Unwieldy {0}",
+    "description": "An Unwieldy weapon is a weapon that can be particularly awkward to use for those without impressive dexterity and hand-eye coordination. To wield an Unwieldy weapon properly, the character needs an Agility characteristic equal to or greater than the weapon’s Unwieldy rating. For each point of Agility by which the character is deficient, he must increase the difficulty of all checks made while using the weapon by one.",
+    "custom": "DescOnly",
+    "isQuality": true
+  },
+  {
+    "key": "QUALADVSUB",
+    "name": "Quality Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Quality Takes 1 Less [AD] to Activate",
+    "qualDesc": "{1} Takes {0} Less [AD] to Activate",
+    "description": "Quality Takes One Less [AD] to Activate",
+    "chooseActiveQuality": true
+  },
+  {
+    "key": "AUTOFIREADV",
+    "name": "Autofire Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Autofire Takes 1 Less [AD] to Activate",
+    "qualDesc": "Autofire Takes {0} Less [AD] to Activate",
+    "description": "Autofire Takes One Less [AD] to Activate"
+  },
+  {
+    "key": "BURNADV",
+    "name": "Burn Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Burn Takes 1 Less [AD] to Activate",
+    "qualDesc": "Burn Takes {0} Less [AD] to Activate",
+    "description": "Burn Takes One Less [AD] to Activate"
+  },
+  {
+    "key": "BLASTADV",
+    "name": "Blast Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Blast Takes 1 Less [AD] to Activate",
+    "qualDesc": "Blast Takes {0} Less [AD] to Activate",
+    "description": "Blast Takes One Less [AD] to Activate"
+  },
+  {
+    "key": "CONCUSSIVEADV",
+    "name": "Concussive Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Concussive Takes 1 Less [AD] to Activate",
+    "qualDesc": "Concussive Takes {0} Less [AD] to Activate",
+    "description": "Concussive Takes One Less [AD] to Activate"
+  },
+  {
+    "key": "DISORIENTADV",
+    "name": "Disorient Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Disorient Takes 1 Less [AD] to Activate",
+    "qualDesc": "Disorient Takes {0} Less [AD] to Activate",
+    "description": "Disorient Takes One Less [AD] to Activate"
+  },
+  {
+    "key": "ENSNAREADV",
+    "name": "Ensnare Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Ensnare Takes 1 Less [AD] to Activate",
+    "qualDesc": "Ensnare Takes {0} Less [AD] to Activate",
+    "description": "Ensnare Takes One Less [AD] to Activate"
+  },
+  {
+    "key": "GUIDEDADV",
+    "name": "Guided Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Guided Takes 1 Less [AD] to Activate",
+    "qualDesc": "Guided Takes {0} Less [AD] to Activate",
+    "description": "Guided Takes One Less [AD] to Activate"
+  },
+  {
+    "key": "KNOCKDOWNADV",
+    "name": "Knockdown Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Knockdown Takes 1 Less [AD] to Activate",
+    "qualDesc": "Knockdown Takes {0} Less [AD] to Activate",
+    "description": "Knockdown Takes One Less [AD] to Activate"
+  },
+  {
+    "key": "LINKEDADV",
+    "name": "Linked Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Linked Takes 1 Less [AD] to Activate",
+    "qualDesc": "Linked Takes {0} Less [AD] to Activate",
+    "description": "Linked Takes One Less [AD] to Activate"
+  },
+  {
+    "key": "STUNADV",
+    "name": "Stun Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Stun Takes 1 Less [AD] to Activate",
+    "qualDesc": "Stun Takes {0} Less [AD] to Activate",
+    "description": "Stun Takes One Less [AD] to Activate"
+  },
+  {
+    "key": "SUNDERADV",
+    "name": "Sunder Takes One Less Advantage to Activate Mod",
+    "type": "Weapon",
+    "modDesc": "Sunder Takes 1 Less [AD] to Activate",
+    "qualDesc": "Sunder Takes {0} Less [AD] to Activate",
+    "description": "Sunder Takes One Less [AD] to Activate"
+  }
+]

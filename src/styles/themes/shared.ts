@@ -42,8 +42,8 @@ export const defaultLayout: GeistUIThemesLayout = {
   gapQuarter: '4pt',
   gapQuarterNegative: '-4pt',
   pageMargin: '16pt',
-  pageWidth: '750pt',
-  pageWidthWithMargin: '782pt',
+  pageWidth: '900pt',
+  pageWidthWithMargin: '932pt',
   breakpointMobile: defaultBreakpoints.xs.max,
   breakpointTablet: defaultBreakpoints.sm.max,
   radius: '5px'

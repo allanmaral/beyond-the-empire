@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
 const DEFAULT_LOCALE = 'en'
-const DEFAULT_TAB = 'guide'
+const DEFAULT_TAB = 'home'
 
 export type LocaleTypes = {
   locale: string
@@ -17,8 +17,8 @@ const useLocale = (): LocaleTypes => {
 
   useEffect(() => {
     const names = pathname.split('/').filter(r => !!r)
-    const currentLocale = names[0] || DEFAULT_LOCALE
-    const currentTabbar = names[1] || DEFAULT_TAB
+    const currentLocale = DEFAULT_LOCALE
+    const currentTabbar = names[0] || DEFAULT_TAB
 
     if (currentLocale !== localeRef.current) {
       setLocale(currentLocale)

@@ -5,11 +5,12 @@ import { Tabbar } from './styles'
 
 interface TabbarMobileProps {
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
+  fixed: boolean
 }
 
-const TabbarMobile: React.FC<TabbarMobileProps> = ({ onClick }) => {
+const TabbarMobile: React.FC<TabbarMobileProps> = ({ onClick, fixed }) => {
   return (
-    <Tabbar>
+    <Tabbar className={fixed ? 'fixed' : ''}>
       <Button className="toggle" auto type="abort" onClick={onClick}>
         <SlidersIcon size={16} />
       </Button>

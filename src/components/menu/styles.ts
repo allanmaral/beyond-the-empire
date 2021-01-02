@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: ${props => props.theme.layout.pageWidth};
   user-select: none;
   position: relative;
   margin: 0 auto;

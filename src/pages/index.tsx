@@ -1,20 +1,33 @@
-import { Text, Card, Note, Code, Spacer } from '@geist-ui/react'
-import { Layout } from '../components/layout'
+import { Text, Card, Note, Spacer } from '@geist-ui/react'
+import { Page } from '../components'
 
 const Home: React.FC = () => {
   return (
-    <Layout meta={{ title: 'Weapons' }}>
+    <Page>
       <Text h1>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+        Welcome to the <a href="https://nextjs.org">Edge</a>
       </Text>
       <Card>
-        hello, world. I am using <Code>@geist-ui/react</Code> !
+        This is a fan made web-app to help you search the contents of the
+        awesome line of books{' '}
+        <a href="https://www.fantasyflightgames.com/en/products/star-wars-edge-of-the-empire/">
+          Edge of the Empire
+        </a>
+        ,{' '}
+        <a href="https://www.fantasyflightgames.com/en/products/star-wars-age-of-rebellion/">
+          Age of Rebellion
+        </a>
+        , and{' '}
+        <a href="https://www.fantasyflightgames.com/en/products/star-wars-force-and-destiny/">
+          Force and Destiny
+        </a>{' '}
+        made by Fantasy Flight Games.
       </Card>
       <Spacer y={1.5} />
       <Card shadow>
         <Note type="success">This note details something important.</Note>
       </Card>
-    </Layout>
+    </Page>
   )
 }
 

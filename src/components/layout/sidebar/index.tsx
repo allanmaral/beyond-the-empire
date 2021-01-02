@@ -5,7 +5,7 @@ import SideItem from './sideItem'
 import useConfig from '../../hooks/useConfig'
 import useLocale from '../../hooks/useLocale'
 
-import Metadatas, { Sides } from '../../../data'
+import Metadatas, { Sides } from '../../../lib/data'
 import { SidebarContainer } from './styles'
 
 export type SideChildren = Sides | Array<Sides>
@@ -27,9 +27,10 @@ const Sidebar: React.FC = memo(() => {
 
   const tabbarData = useMemo(() => {
     const allSides = Metadatas[locale]
-    const currentSide = allSides.filter(side => (side.name = tabbar))[0]
+    const currentSide = allSides.filter(side => side.name === tabbar)[0]
+
     return (currentSide.children || []) as Array<Sides>
-  }, [])
+  }, [tabbar, locale])
 
   useEffect(() => {
     Router.events.on('routeChangeStart', () => {

@@ -41,7 +41,7 @@ export const Layout: React.FC<LayoutProps> = memo(({ children, meta }) => {
   return (
     <Container>
       <PageHeader meta={meta} />
-      <TabbarMobile onClick={mobileTabbarCliHandler} />
+      <TabbarMobile fixed={tabbarFixed} onClick={mobileTabbarCliHandler} />
       <Aside expanded={expanded} fixed={tabbarFixed}>
         <Sidebar />
       </Aside>

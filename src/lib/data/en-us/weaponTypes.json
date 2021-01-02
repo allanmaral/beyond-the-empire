@@ -1,0 +1,42 @@
+[
+  {
+    "key": "Brawling",
+    "name": "Brawling"
+  },
+  {
+    "key": "Energy Weapon",
+    "name": "Energy Weapon"
+  },
+  {
+    "key": "Explosives/Other",
+    "name": "Explosives/Other"
+  },
+  {
+    "key": "Lightsaber",
+    "name": "Lightsaber"
+  },
+  {
+    "key": "Lightwhip",
+    "name": "Lightwhip"
+  },
+  {
+    "key": "Melee",
+    "name": "Melee"
+  },
+  {
+    "key": "Slugthrower",
+    "name": "Slugthrower"
+  },
+  {
+    "key": "Thrown",
+    "name": "Thrown"
+  },
+  {
+    "key": "Tool",
+    "name": "Tool"
+  },
+  {
+    "key": "Vehicle",
+    "name": "Vehicle"
+  }
+]

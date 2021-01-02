@@ -40,6 +40,11 @@ export const Tabbar = styled.div`
     visibility: hidden;
     top: -1000px;
   }
+
+  &.fixed {
+    border-bottom: none;
+    background-color: transparent;
+  }
 `
 export const Item = styled.div`
   width: 100%;

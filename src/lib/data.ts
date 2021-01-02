@@ -1,4 +1,4 @@
-import enUS from './metadata-en-us.json'
+import enUS from './data/metadata-en-us.json'
 
 export type Sides = {
   name: string

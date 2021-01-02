@@ -1,0 +1,42 @@
+[
+  {
+    "name": "home",
+    "children": []
+  },
+  {
+    "name": "gears",
+    "children": [
+      {
+        "name": "Weapons",
+        "children": [
+          {
+            "name": "Energy Weapons",
+            "url": "/gears/energy-weapons",
+            "index": 5,
+            "group": "Weapons"
+          },
+          {
+            "name": "Explosives/Other",
+            "url": "/gears/explosives",
+            "index": 5,
+            "group": "Weapons"
+          },
+          {
+            "name": "Armors",
+            "url": "/gears/armors",
+            "index": 10,
+            "group": "Equipments"
+          }
+        ]
+      },
+      {
+        "name": "Gears",
+        "children": []
+      },
+      {
+        "name": "Attachments",
+        "children": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "key": "ASTRO",
+    "name": "Astrogation"
+  },
+  {
+    "key": "ATHL",
+    "name": "Athletics"
+  },
+  {
+    "key": "BRAWL",
+    "name": "Brawl"
+  },
+  {
+    "key": "CHARM",
+    "name": "Charm"
+  },
+  {
+    "key": "COERC",
+    "name": "Coercion"
+  },
+  {
+    "key": "COMP",
+    "name": "Computers"
+  },
+  {
+    "key": "COOL",
+    "name": "Cool"
+  },
+  {
+    "key": "COORD",
+    "name": "Coordination"
+  },
+  {
+    "key": "CORE",
+    "name": "Core Worlds"
+  },
+  {
+    "key": "DECEP",
+    "name": "Deception"
+  },
+  {
+    "key": "DISC",
+    "name": "Discipline"
+  },
+  {
+    "key": "EDU",
+    "name": "Education"
+  },
+  {
+    "key": "GUNN",
+    "name": "Gunnery"
+  },
+  {
+    "key": "LEAD",
+    "name": "Leadership"
+  },
+  {
+    "key": "LTSABER",
+    "name": "Lightsaber"
+  },
+  {
+    "key": "LORE",
+    "name": "Lore"
+  },
+  {
+    "key": "MECH",
+    "name": "Mechanics"
+  },
+  {
+    "key": "MED",
+    "name": "Medicine"
+  },
+  {
+    "key": "MELEE",
+    "name": "Melee"
+  },
+  {
+    "key": "NEG",
+    "name": "Negotiation"
+  },
+  {
+    "key": "OUT",
+    "name": "Outer Rim"
+  },
+  {
+    "key": "PERC",
+    "name": "Perception"
+  },
+  {
+    "key": "PILOTPL",
+    "name": "Piloting - Planetary"
+  },
+  {
+    "key": "PILOTSP",
+    "name": "Piloting - Space"
+  },
+  {
+    "key": "RANGHVY",
+    "name": "Ranged - Heavy"
+  },
+  {
+    "key": "RANGLT",
+    "name": "Ranged - Light"
+  },
+  {
+    "key": "RESIL",
+    "name": "Resilience"
+  },
+  {
+    "key": "SKUL",
+    "name": "Skulduggery"
+  },
+  {
+    "key": "STEAL",
+    "name": "Stealth"
+  },
+  {
+    "key": "SW",
+    "name": "Streetwise"
+  },
+  {
+    "key": "SURV",
+    "name": "Survival"
+  },
+  {
+    "key": "UND",
+    "name": "Underworld"
+  },
+  {
+    "key": "VIGIL",
+    "name": "Vigilance"
+  },
+  {
+    "key": "XEN",
+    "name": "Xenology"
+  },
+  {
+    "key": "WARF",
+    "name": "Warfare"
+  }
+]

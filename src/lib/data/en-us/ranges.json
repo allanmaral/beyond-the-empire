@@ -1,0 +1,30 @@
+[
+  {
+    "key": "wrClose",
+    "name": "Close"
+  },
+  {
+    "key": "wrEngaged",
+    "name": "Engaged"
+  },
+  {
+    "key": "wrExtreme",
+    "name": "Extreme"
+  },
+  {
+    "key": "wrLong",
+    "name": "Long"
+  },
+  {
+    "key": "wrMedium",
+    "name": "Medium"
+  },
+  {
+    "key": "wrNoRange",
+    "name": "None"
+  },
+  {
+    "key": "wrShort",
+    "name": "Short"
+  }
+]
