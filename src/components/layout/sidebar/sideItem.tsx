@@ -1,8 +1,8 @@
 import { cloneElement, memo } from 'react'
+import { Sides } from '../../../lib/data'
 
 import ActiveCatalog from './activeCatalog'
 import ActiveLink from './activeLink'
-import { Sides } from '../../../data'
 
 import { Children, Item } from './styles'
 

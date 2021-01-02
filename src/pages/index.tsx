@@ -1,11 +1,11 @@
-import { Text, Card, Note, Spacer } from '@geist-ui/react'
+import { Text, Card } from '@geist-ui/react'
 import { Page } from '../components'
 
 const Home: React.FC = () => {
   return (
     <Page>
       <Text h1>
-        Welcome to the <a href="https://nextjs.org">Edge</a>
+        Welcome to the <a href="#">Edge</a>
       </Text>
       <Card>
         This is a fan made web-app to help you search the contents of the
@@ -22,10 +22,6 @@ const Home: React.FC = () => {
           Force and Destiny
         </a>{' '}
         made by Fantasy Flight Games.
-      </Card>
-      <Spacer y={1.5} />
-      <Card shadow>
-        <Note type="success">This note details something important.</Note>
       </Card>
     </Page>
   )
