@@ -172,3 +172,38 @@ export interface WeaponType {
   types?: Type[]
   slug?: string
 }
+
+interface WeaponsDictionary {
+  [key: string]: Weapon
+}
+
+interface WeaponTypeDictionary {
+  [key: string]: WeaponType
+}
+
+export interface WeaponTableEntry {
+  name: string
+  skill?: string
+  damage?: string
+  critical?: string
+  range?: string
+  encumbrance: string
+  hp: string
+  price?: string
+  rarity: string
+  restricted: boolean
+  special: unknown
+  type: string
+}
+
+interface WeaponTableData {
+  name: string
+  filters: {
+    [prop: string]: {
+      label: string
+      type: string
+      options?: { value: string; label: string }[]
+    }
+  }
+  tableEntries: WeaponTableEntry[]
+}
