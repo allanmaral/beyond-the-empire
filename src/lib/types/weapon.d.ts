@@ -1,5 +1,7 @@
 /* eslint-disable no-use-before-define */
 
+import { FilterOptions } from '../../components/table'
+
 export interface WeaponList {
   weapons: Weapon[]
 }
@@ -198,12 +200,6 @@ export interface WeaponTableEntry {
 
 interface WeaponTableData {
   name: string
-  filters: {
-    [prop: string]: {
-      label: string
-      type: string
-      options?: { value: string; label: string }[]
-    }
-  }
+  filters: FilterOptions
   tableEntries: WeaponTableEntry[]
 }

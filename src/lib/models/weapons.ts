@@ -13,6 +13,7 @@ import {
   WeaponType,
   WeaponTypeDictionary
 } from '../types/weapon'
+import { FilterOptions } from '../../components/table'
 
 const weapons: { [key: string]: Weapon[] } = {
   en: enUsWeapons as Weapon[]
@@ -96,7 +97,7 @@ const getTableData = (category: string, locale: string): WeaponTableData => {
   const weaponType = weaponTypes[locale].find(t => t.slug === category)
   const types = weaponType.types || [weaponType.key]
   const tableEntries = getTable(locale, types)
-  const filters = {
+  const filters: FilterOptions = {
     skill: {
       label: 'Skill',
       type: 'multiselect',
