@@ -1,5 +1,7 @@
 /* eslint-disable no-use-before-define */
 
+import { FilterOptions } from '../../components/table'
+
 export interface WeaponList {
   weapons: Weapon[]
 }
@@ -171,4 +173,33 @@ export interface WeaponType {
   category?: boolean
   types?: Type[]
   slug?: string
+}
+
+interface WeaponsDictionary {
+  [key: string]: Weapon
+}
+
+interface WeaponTypeDictionary {
+  [key: string]: WeaponType
+}
+
+export interface WeaponTableEntry {
+  name: string
+  skill?: string
+  damage?: string
+  critical?: string
+  range?: string
+  encumbrance: string
+  hp: string
+  price?: string
+  rarity: string
+  restricted: boolean
+  special: unknown
+  type: string
+}
+
+interface WeaponTableData {
+  name: string
+  filters: FilterOptions
+  tableEntries: WeaponTableEntry[]
 }

@@ -4,15 +4,16 @@ import Skills from './skills'
 import Ranges from './ranges'
 import Descriptors from './itemDescriptors'
 import Utils from './utils'
-import { Weapon, WeaponQuality, WeaponType } from '../types/weapon'
-
-interface WeaponsDictionary {
-  [key: string]: Weapon
-}
-
-interface WeaponTypeDictionary {
-  [key: string]: WeaponType
-}
+import {
+  Weapon,
+  WeaponQuality,
+  WeaponsDictionary,
+  WeaponTableData,
+  WeaponTableEntry,
+  WeaponType,
+  WeaponTypeDictionary
+} from '../types/weapon'
+import { FilterOptions } from '../../components/table'
 
 const weapons: { [key: string]: Weapon[] } = {
   en: enUsWeapons as Weapon[]
@@ -41,20 +42,6 @@ const weaponTypeDictionaries = Object.keys(weaponTypes).reduce<{
   }),
   {}
 )
-
-export interface WeaponTableEntry {
-  name: string
-  skill?: string
-  damage?: string
-  critical?: string
-  range?: string
-  encumbrance: string
-  hp: string
-  price?: string
-  rarity: string
-  special: unknown
-  type: string
-}
 
 const getTable = (
   locale: string,
@@ -95,10 +82,9 @@ const getTable = (
       range: w.range || rangeDictionary[w.rangeValue]?.name,
       encumbrance: String(w.encumbrance || 0),
       hp: String(w.hp || 0),
-      restricted: w.restricted,
+      restricted: w.restricted || false,
       price: `${w.price}${w.restricted ? ' (R)' : ''}`,
       rarity: `${w.rarity}`,
-      // TODO: This is a mess
       special: mapQuality(w.qualities), // w.qualities
       type: weaponTypeDictionary[w.type].name
     }))
@@ -107,16 +93,39 @@ const getTable = (
   return Utils.prepareSerialize(mappedWeapons)
 }
 
-interface WeaponTableData {
-  name: string
-  tableEntries: WeaponTableEntry[]
-}
-
 const getTableData = (category: string, locale: string): WeaponTableData => {
   const weaponType = weaponTypes[locale].find(t => t.slug === category)
   const types = weaponType.types || [weaponType.key]
+  const tableEntries = getTable(locale, types)
+  const filters: FilterOptions = {
+    skill: {
+      label: 'Skill',
+      type: 'multiselect',
+      options: Utils.getOptionsFromTable(tableEntries, 'skill')
+        .sort((a, b) => a.localeCompare(b))
+        .map(opt => ({
+          value: opt,
+          label: opt
+        }))
+    },
+    range: {
+      label: 'Range',
+      type: 'multiselect',
+      options: Utils.getOptionsFromTable(tableEntries, 'range')
+        .sort((a, b) => a.localeCompare(b))
+        .map(opt => ({
+          value: opt,
+          label: opt
+        }))
+    },
+    restricted: {
+      label: 'Restricted',
+      type: 'checkbox'
+    }
+  }
   return {
     name: weaponType.name,
+    filters: filters,
     tableEntries: getTable(locale, types)
   }
 }
@@ -148,23 +157,6 @@ const getCategories = (locales: string[]): WeaponCategory[] => {
     []
   )
 }
-
-// const getCategories = (locales: string[]) => {
-//   const categories = locales.reduce<WeaponCategory[]>(
-//     (result, lc) => [
-//       ...result,
-//       ...Object.entries(weaponTypeDictionaries[lc])
-//         .filter(([, wType]) => wType.category)
-//         .map(([, wType]) => ({
-//           name: wType.name,
-//           url: slugify(wType.name),
-//           types: wType.types || [wType.key],
-//           locale: lc
-//         }))
-//     ],
-//     []
-//   )
-// }
 
 export default {
   getTable,
