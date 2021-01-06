@@ -10,7 +10,7 @@ export const Tabbar = styled.div`
   height: 3.7rem;
   background-color: ${props => props.theme.palette.background};
   display: flex;
-  padding: 0 calc(${props => props.theme.layout.gap} * 2);
+  padding: 0 1rem;
   box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
@@ -35,7 +35,7 @@ export const Tabbar = styled.div`
     text-transform: capitalize;
   }
 
-  ${breakpoints.tabletAndUp} {
+  ${breakpoints.desktop} {
     display: none;
     visibility: hidden;
     top: -1000px;
@@ -126,8 +126,9 @@ export const SidebarContainer = styled.div`
     margin-bottom: ${props => props.theme.layout.gap};
   }
 
-  ${breakpoints.mobile} {
-    padding: calc(3.5 * ${props => props.theme.layout.gap}) 15vw;
+  ${breakpoints.tablet} {
+    padding: calc(3.5 * ${props => props.theme.layout.gap})
+      calc(2 * ${props => props.theme.layout.gap});
     width: 100vw;
     height: 100%;
   }

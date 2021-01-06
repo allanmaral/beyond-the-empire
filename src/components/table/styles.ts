@@ -7,6 +7,10 @@ import { breakpoints } from '../../styles/utils'
 
 export const FilterContainer = styled.div`
   min-width: 400px;
+
+  ${breakpoints.mobile} {
+    min-width: calc(100vw - 3rem);
+  }
 `
 
 export const FilterFieldContainer = styled.div`

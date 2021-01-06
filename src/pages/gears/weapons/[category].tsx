@@ -7,13 +7,17 @@ import { WeaponTableEntry } from '../../../lib/types/weapon'
 import { Layout } from '../../../components/layout'
 import Table, { FilterOptions } from '../../../components/table'
 
-interface WeaponPageProps {
+interface WeaponListPageProps {
   name: string
   weapons: WeaponTableEntry[]
   filters: FilterOptions
 }
 
-const WeaponsPage: React.FC<WeaponPageProps> = ({ name, weapons, filters }) => {
+const WeaponsListPage: React.FC<WeaponListPageProps> = ({
+  name,
+  weapons,
+  filters
+}) => {
   return (
     <Layout meta={{ title: name }}>
       <Text h1>{name}</Text>
@@ -33,7 +37,7 @@ const WeaponsPage: React.FC<WeaponPageProps> = ({ name, weapons, filters }) => {
   )
 }
 
-export const getStaticProps: GetStaticProps<WeaponPageProps> = async context => {
+export const getStaticProps: GetStaticProps<WeaponListPageProps> = async context => {
   const tableData = Weapons.getTableData(
     context.params.category as string,
     context.locale
@@ -55,4 +59,4 @@ export const getStaticPaths: GetStaticPaths = async context => {
   }
 }
 
-export default WeaponsPage
+export default WeaponsListPage

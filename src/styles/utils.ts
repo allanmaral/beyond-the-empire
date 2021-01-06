@@ -146,5 +146,8 @@ export const breakpoints = {
   },
   tabletAndUp: (props: BaseThemedProp): string => {
     return `@media (min-width:${props.theme.breakpoints.sm.min})`
+  },
+  desktop: (props: BaseThemedProp): string => {
+    return `@media (min-width:${props.theme.breakpoints.md.min})`
   }
 }
