@@ -1,5 +1,5 @@
 import Router from 'next/router'
-import { Button, useTheme } from '@geist-ui/react'
+import { Button } from '@geist-ui/react'
 import SlidersIcon from '@geist-ui/react-icons/sliders'
 
 import LogoIcon from '../../logo'
@@ -12,7 +12,6 @@ interface TabbarMobileProps {
 }
 
 const TabbarMobile: React.FC<TabbarMobileProps> = ({ onClick, fixed }) => {
-  const theme = useTheme()
   // TODO: Review use locale
   const goHome = () => {
     Router.push('/')
@@ -25,7 +24,7 @@ const TabbarMobile: React.FC<TabbarMobileProps> = ({ onClick, fixed }) => {
       </Button>
       {!fixed && (
         <span title="Go Home" onClick={goHome}>
-          <LogoIcon isDark={theme.type === 'dark'} />
+          <LogoIcon />
         </span>
       )}
     </Tabbar>

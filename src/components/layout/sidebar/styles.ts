@@ -63,7 +63,7 @@ export const Children = styled.div`
 export const CatalogSpan = styled.span`
   font-size: 0.8125rem;
   transition: all 0.2s ease;
-  color: ${props => props.theme.palette.accents_4};
+  color: ${props => props.theme.palette.accent2};
   text-transform: uppercase;
   letter-spacing: 1.3px;
 
@@ -92,7 +92,7 @@ export const LinkContainer = styled.div`
   }
 
   a.active {
-    color: ${props => props.theme.palette.success};
+    color: ${props => props.theme.palette.link};
     font-weight: 600;
 
     span {

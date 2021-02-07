@@ -1,4 +1,3 @@
-import { useTheme } from '@geist-ui/react'
 import Router from 'next/router'
 
 import Controls from '../controls'
@@ -7,7 +6,6 @@ import LogoIcon from '../logo'
 import { Nav } from './styles'
 
 const MenuLinks: React.FC = () => {
-  const theme = useTheme()
   // TODO: Review LOCALE
   const goHome = () => {
     Router.push('/')
@@ -16,7 +14,7 @@ const MenuLinks: React.FC = () => {
   return (
     <Nav>
       <span title="Go Home" onClick={goHome}>
-        <LogoIcon isDark={theme.type === 'dark'} />
+        <LogoIcon />
       </span>
       <div>
         <Controls />

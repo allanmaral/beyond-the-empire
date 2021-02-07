@@ -43,7 +43,12 @@ export const palette: GeistUIThemesPalette = {
   purple: '#f81ce5',
   alert: '#ff0080',
   magenta: '#eb367f',
-  link: '#0070f3'
+  link: '#741415',
+  link_hover: '#741415',
+
+  primary: '#52634a',
+  accent: '#741415',
+  accent2: '#876d2b'
 }
 
 export const expressiveness: GeistUIThemesExpressiveness = {

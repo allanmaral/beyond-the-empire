@@ -44,11 +44,13 @@ class Document extends NextDocument {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-            rel="stylesheet"
-          />
+            rel="preload"
+            as="font"
+            href="/fonts/elektra/elektra_medium_pro_regular-webfont.woff2"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          ></link>
         </Head>
         <body>
           <script
