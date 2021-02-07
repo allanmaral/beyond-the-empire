@@ -1,24 +1,43 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { Text } from '@geist-ui/react'
+import NextLink from 'next/link'
+import { Link, Text } from '@geist-ui/react'
 
 import Weapons from '../../../lib/models/weapons'
 import { WeaponTableEntry } from '../../../lib/types/weapon'
 
 import { Layout } from '../../../components/layout'
 import Table, { FilterOptions } from '../../../components/table'
+import { useMemo } from 'react'
 
-interface WeaponPageProps {
+interface WeaponListPageProps {
   name: string
   weapons: WeaponTableEntry[]
   filters: FilterOptions
 }
 
-const WeaponsPage: React.FC<WeaponPageProps> = ({ name, weapons, filters }) => {
+const WeaponsListPage: React.FC<WeaponListPageProps> = ({
+  name,
+  weapons,
+  filters
+}) => {
+  const data = useMemo(() => {
+    return weapons.map(w => ({
+      ...w,
+      _name: (
+        <NextLink href={`../weapon/${w.slug}`}>
+          <Link color underline>
+            {w.name}
+          </Link>
+        </NextLink>
+      )
+    }))
+  }, [weapons])
+
   return (
     <Layout meta={{ title: name }}>
       <Text h1>{name}</Text>
-      <Table data={weapons} searchable filter={filters}>
-        <Table.Column prop="name" label="name" width={120} />
+      <Table data={data} searchable filter={filters}>
+        <Table.Column prop="_name" label="name" width={120} />
         <Table.Column prop="skill" label="skill" width={130} />
         <Table.Column prop="damage" label="dam" />
         <Table.Column prop="critical" label="crit" />
@@ -33,7 +52,7 @@ const WeaponsPage: React.FC<WeaponPageProps> = ({ name, weapons, filters }) => {
   )
 }
 
-export const getStaticProps: GetStaticProps<WeaponPageProps> = async context => {
+export const getStaticProps: GetStaticProps<WeaponListPageProps> = async context => {
   const tableData = Weapons.getTableData(
     context.params.category as string,
     context.locale
@@ -55,4 +74,4 @@ export const getStaticPaths: GetStaticPaths = async context => {
   }
 }
 
-export default WeaponsPage
+export default WeaponsListPage

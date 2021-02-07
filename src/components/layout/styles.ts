@@ -11,10 +11,10 @@ export const Container = styled.div`
   display: flex;
   box-sizing: border-box;
 
-  ${breakpoints.mobile} {
-    max-width: 100%;
-    width: 100%;
-    padding: 5rem 1rem;
+  ${breakpoints.tablet} {
+    max-width: calc(100vw - 3rem);
+    width: 100vw;
+    padding: 2rem 0;
   }
 `
 
@@ -31,7 +31,7 @@ export const Aside = styled.aside<{ fixed?: boolean; expanded?: boolean }>`
   transition: transform 200ms ease-out;
   z-index: 100;
 
-  ${breakpoints.mobile} {
+  ${breakpoints.tablet} {
     top: 0;
     left: 0;
     right: 0;
@@ -50,7 +50,7 @@ export const SideShadow = styled.div`
   flex-shrink: 0;
   height: 100%;
 
-  ${breakpoints.mobile} {
+  ${breakpoints.tablet} {
     display: none;
     visibility: hidden;
   }
@@ -61,13 +61,12 @@ export const Main = styled.main`
   max-width: calc(100% - ${sidebarWidth}px);
   flex-direction: column;
   padding-left: 20px;
-  padding-right: 25px;
   flex: 0 0 100%;
   padding-bottom: 150px;
 
-  ${breakpoints.mobile} {
-    width: 90vw;
-    max-width: 90vw;
+  ${breakpoints.tablet} {
+    width: 100%;
+    max-width: unset;
     padding: 0;
   }
 `

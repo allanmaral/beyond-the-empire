@@ -8,7 +8,7 @@ import { Nav } from './styles'
 
 const MenuLinks: React.FC = () => {
   const theme = useTheme()
-
+  // TODO: Review LOCALE
   const goHome = () => {
     Router.push('/')
   }

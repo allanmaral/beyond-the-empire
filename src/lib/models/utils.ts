@@ -1,17 +1,40 @@
 /* eslint-disable prettier/prettier */
+import GithubSlugger from 'github-slugger'
 
 const getDictionary = <
-  T extends { key: string },
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  T extends object,
+  L extends { [key: string]: T[] }
+>(
+    locale: string,
+    items: L,
+    key: keyof T = 'key' as keyof T
+  ): { [key: string]: T } => {
+  const itemList = items[locale] || []
+  return itemList.reduce((result, item) => {
+    result[item[key] as unknown as string] = item
+    return result
+  }, {})
+}
+
+const getSlugDictionary = <
+  T extends { name: string },
   L extends { [key: string]: T[] }
 >(
     locale: string,
     items: L
   ): { [key: string]: T } => {
+  const slugger = new GithubSlugger()
   const itemList = items[locale] || []
   return itemList.reduce((result, item) => {
-    result[item.key] = item
+    result[slugger.slug(item.name)] = item
     return result
   }, {})
+}
+
+const slugifyList = <T extends { slug: string }>(list: T[], key: keyof T): T[] => {
+  const slugger = new GithubSlugger()
+  return list.map(i => ({ ...i, slug: slugger.slug(i[key] as unknown as string) }))
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -42,7 +65,9 @@ const getOptionsFromTable = <T extends object, F extends keyof T>(
 
 export default {
   getDictionary,
+  getSlugDictionary,
   prepareSerialize,
   format,
-  getOptionsFromTable
+  getOptionsFromTable,
+  slugifyList
 }

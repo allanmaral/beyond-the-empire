@@ -12,7 +12,7 @@ export const LogoIcon: React.FC<LogoIconProps> = ({ isDark, ...props }) => {
       <NoBorderRadiusImage
         src={isDark ? '/images/logo_dark.svg' : '/images/logo_light.svg'}
         {...props}
-        width={100}
+        width={80}
         draggable={false}
         title="Home"
         style={{ cursor: 'pointer', borderRadius: 0 }}

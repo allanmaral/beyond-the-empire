@@ -1,5 +1,11 @@
 import { GeistUIThemes } from '@geist-ui/react'
-import { ThemedStyledProps } from 'styled-components'
+import {
+  css,
+  DefaultTheme,
+  FlattenSimpleInterpolation,
+  ThemedCssFunction,
+  ThemedStyledProps
+} from 'styled-components'
 import { light, dark } from './themes'
 
 export const mapTheme = (theme: GeistUIThemes): { [key: string]: string } => {
@@ -146,5 +152,32 @@ export const breakpoints = {
   },
   tabletAndUp: (props: BaseThemedProp): string => {
     return `@media (min-width:${props.theme.breakpoints.sm.min})`
+  },
+  desktop: (props: BaseThemedProp): string => {
+    return `@media (min-width:${props.theme.breakpoints.md.min})`
   }
 }
+
+export const flexContainerWrapItems = (
+  flexBasis: number,
+  maxWidth = 2000
+): FlattenSimpleInterpolation => css`
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    max-width: 100%;
+    flex-grow: 1;
+    flex-basis: ${flexBasis}px;
+
+    ${Array(Math.floor(maxWidth / flexBasis))
+      .fill('')
+      .map(
+        (_, i) =>
+          `@media(min-width: ${flexBasis * (i + 1)}px) {
+            max-width: ${100 / (i + 1)}%;
+          }`
+      )
+      .join('\n')}
+  }
+`

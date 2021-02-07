@@ -7,6 +7,10 @@ import { breakpoints } from '../../styles/utils'
 
 export const FilterContainer = styled.div`
   min-width: 400px;
+
+  ${breakpoints.mobile} {
+    min-width: calc(100vw - 3rem);
+  }
 `
 
 export const FilterFieldContainer = styled.div`
@@ -46,5 +50,9 @@ export const SearchContainer = styled.div`
   ${breakpoints.mobile} {
     max-width: unset;
     width: 100%;
+  }
+
+  .input-wrapper {
+    background: ${props => props.theme.palette.background};
   }
 `

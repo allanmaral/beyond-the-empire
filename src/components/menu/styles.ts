@@ -1,9 +1,15 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../styles/utils'
 
 export const SiteName = styled.div`
   display: flex;
   align-items: center;
 `
+
+export const MenuContainer = styled.div`
+  background: ${props => props.theme.palette.background};
+`
+
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
@@ -14,6 +20,12 @@ export const Nav = styled.nav`
   margin: 0 auto;
   padding: 0 ${props => props.theme.layout.gap};
   height: 60px;
+
+  ${breakpoints.tablet} {
+    span {
+      opacity: 0;
+    }
+  }
 `
 
 export const NavFill = styled.div`

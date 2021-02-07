@@ -31,6 +31,8 @@
     "rules": {
       "prettier/prettier": "error",
       "react/prop-types": "off",
-      "space-before-function-paren": "off"
+      "space-before-function-paren": "off",
+      "multiline-ternary": "off",
+      "multiline-comment-style": "off"
     }
 }

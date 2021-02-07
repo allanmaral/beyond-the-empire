@@ -1,6 +1,6 @@
 import useConfig from '../hooks/useConfig'
 import useAwaitForRender from '../hooks/useAwaitForRender'
-import { memo, useCallback, useState } from 'react'
+import { memo, useCallback, useEffect, useState } from 'react'
 import { useBodyScroll } from '@geist-ui/react'
 
 import PageHeader from '../header'
@@ -8,6 +8,7 @@ import TabbarMobile from './sidebar/tabbarMobile'
 
 import { Aside, Container, EmptySection, SideShadow, Main } from './styles'
 import Sidebar from './sidebar'
+import { Router } from 'next/router'
 
 export interface Meta {
   title: string
@@ -28,6 +29,13 @@ export const Layout: React.FC<LayoutProps> = memo(({ children, meta }) => {
     setExpanded(!expanded)
     setBodyScroll(!expanded)
   }, [expanded])
+
+  useEffect(() => {
+    Router.events.on('routeChangeStart', () => {
+      setExpanded(false)
+      setBodyScroll(false)
+    })
+  }, [])
 
   if (!pageRendered) {
     return (
