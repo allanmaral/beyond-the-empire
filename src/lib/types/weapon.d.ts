@@ -36,6 +36,7 @@ export interface Weapon {
   attachCostMult?: number
   ordnance?: boolean
   vehicleNoReplace?: boolean
+  slug: string
 }
 
 export interface BaseMod {
@@ -196,6 +197,8 @@ export interface WeaponTableEntry {
   restricted: boolean
   special: unknown
   type: string
+  slug: string
+  sources: Source[]
 }
 
 interface WeaponTableData {

@@ -1,11 +1,13 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { Text } from '@geist-ui/react'
+import NextLink from 'next/link'
+import { Link, Text } from '@geist-ui/react'
 
 import Weapons from '../../../lib/models/weapons'
 import { WeaponTableEntry } from '../../../lib/types/weapon'
 
 import { Layout } from '../../../components/layout'
 import Table, { FilterOptions } from '../../../components/table'
+import { useMemo } from 'react'
 
 interface WeaponListPageProps {
   name: string
@@ -18,11 +20,24 @@ const WeaponsListPage: React.FC<WeaponListPageProps> = ({
   weapons,
   filters
 }) => {
+  const data = useMemo(() => {
+    return weapons.map(w => ({
+      ...w,
+      _name: (
+        <NextLink href={`../weapon/${w.slug}`}>
+          <Link color underline>
+            {w.name}
+          </Link>
+        </NextLink>
+      )
+    }))
+  }, [weapons])
+
   return (
     <Layout meta={{ title: name }}>
       <Text h1>{name}</Text>
-      <Table data={weapons} searchable filter={filters}>
-        <Table.Column prop="name" label="name" width={120} />
+      <Table data={data} searchable filter={filters}>
+        <Table.Column prop="_name" label="name" width={120} />
         <Table.Column prop="skill" label="skill" width={130} />
         <Table.Column prop="damage" label="dam" />
         <Table.Column prop="critical" label="crit" />

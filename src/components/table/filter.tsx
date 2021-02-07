@@ -187,6 +187,7 @@ const Filter: React.FC<FilterProps> = ({
             value={search}
             onChange={e => handleSearch(e.target.value)}
             width="100%"
+            clearable
             iconRight={<SearchIcon />}
             placeholder="Search..."
           />

@@ -121,8 +121,8 @@
     "key": "ADVADD",
     "name": "Add Advantage to Successful Check Mod",
     "type": "Weapon",
-    "modDesc": "Add One [ADVANTAGE] to Successful Check",
-    "qualDesc": "Add {0} [ADVANTAGE] to Successful Check"
+    "modDesc": "Add One [AD] to Successful Check",
+    "qualDesc": "Add {0} [AD] to Successful Check"
   },
   {
     "key": "SUCCADD",
@@ -135,22 +135,22 @@
     "key": "ADVADDCOM",
     "name": "Add Advantage to Combat Check Mod",
     "type": "Weapon",
-    "modDesc": "Add One [ADVANTAGE] to Combat Check",
-    "qualDesc": "Add {0} [ADVANTAGE] to Combat Check"
+    "modDesc": "Add One [AD] to Combat Check",
+    "qualDesc": "Add {0} [AD] to Combat Check"
   },
   {
     "key": "THRADD",
     "name": "Add Threat to Check Mod",
     "type": "Weapon",
-    "modDesc": "Add One [THREAT] to Check",
-    "qualDesc": "Add {0} [THREAT] to Check"
+    "modDesc": "Add One [TH] to Check",
+    "qualDesc": "Add {0} [TH] to Check"
   },
   {
     "key": "THRCANCEL",
     "name": "Cancel Threat from Check Mod",
     "type": "Weapon",
-    "modDesc": "Cancel One [THREAT] from Check",
-    "qualDesc": "Cancel {0} [THREAT] from Check"
+    "modDesc": "Cancel One [TH] from Check",
+    "qualDesc": "Cancel {0} [TH] from Check"
   },
   {
     "key": "UPGRADEDIFF",
@@ -162,8 +162,8 @@
   {
     "key": "ADVADDINIT",
     "name": "Add Advantage to Initiative Check Mod",
-    "modDesc": "Add One [ADVANTAGE] to Initiative Check",
-    "qualDesc": "Add {0} [ADVANTAGE] to Initiative Check"
+    "modDesc": "Add One [AD] to Initiative Check",
+    "qualDesc": "Add {0} [AD] to Initiative Check"
   },
   {
     "key": "HPADD",
@@ -329,25 +329,25 @@
     "key": "SETBACKADD",
     "name": "Add Setback Mod",
     "type": "Weapon",
-    "modDesc": "Add [SETBACK] to all attack checks when using this weapon",
-    "qualDesc": "Add {0} [SETBACK] to all attack checks when using this weapon",
-    "description": "Add [SETBACK] to all attack checks when using this weapon"
+    "modDesc": "Add [SE] to all attack checks when using this weapon",
+    "qualDesc": "Add {0} [SE] to all attack checks when using this weapon",
+    "description": "Add [SE] to all attack checks when using this weapon"
   },
   {
     "key": "SETBACKSUB",
     "name": "Remove Setback Mod",
     "type": "Weapon",
-    "modDesc": "Remove [SETBACK] from all attack checks when using this weapon",
-    "qualDesc": "Remove {0} [SETBACK] from all attack checks when using this weapon",
-    "description": "Remove [SETBACK] from all attack checks when using this weapon"
+    "modDesc": "Remove [SE] from all attack checks when using this weapon",
+    "qualDesc": "Remove {0} [SE] from all attack checks when using this weapon",
+    "description": "Remove [SE] from all attack checks when using this weapon"
   },
   {
     "key": "BOOSTADD",
     "name": "Add Boost Mod",
     "type": "Weapon",
-    "modDesc": "Add [BOOST] to all attack checks when using this weapon",
-    "qualDesc": "Add [BOOST] to all attack checks when using this weapon",
-    "description": "Add [BOOST] to all attack checks when using this weapon"
+    "modDesc": "Add [BO] to all attack checks when using this weapon",
+    "qualDesc": "Add [BO] to all attack checks when using this weapon",
+    "description": "Add [BO] to all attack checks when using this weapon"
   },
   {
     "key": "DIFFSUBLONG",
@@ -1088,7 +1088,7 @@
     "type": "Weapon",
     "modDesc": "Auto Fire",
     "qualDesc": "Auto Fire",
-    "description": "A weapon with Auto-fire can be set to shoot in rapid succession and potentially spray an area with bolts, flechettes, slugs, or other types of projectiles. The advantage in using Auto-fire is that it has the chance to hit multiple targets or hit a single target multiple times.\n\n[P]Attacking with a weapon on Auto-fire is generally less accurate and the attacker must increase the difficulty of the attack check by [DI]. The user may choose to not use the Auto-fire quality on a weapon; in this case, he cannot trigger the quality but also does not suffer the aforementioned penalty.\n\n[P]If the attack hits, the attacker can trigger Auto-fire by spending [AD][AD]. Auto-fire can be triggered multiple times. Each time the attacker triggers auto-fire, it deals an additional hit to the target. Each of these counts as an additional hit from that weapon, and each hit deals base damage plus the number of uncanceled [SU] on the check.\n\n[P]These additional hits can be allocated to the target, or to other targets within range of the weapon. If the attacker wishes to hit multiple targets, he must decide to do so before making the check. Furthermore, if he wishes to hit multiple targets, his initial target must always be the target with the highest difficulty and highest defense (if this is two separate targets, the GM chooses which target is his initial target). The initial hit must always be against the initial target, subsequent hits generated can be allocated to any of the other designated targets.\n\n[P]Auto-fire weapons can also activate one Critical Injury for each hit generated on the attack per the normal cost; the Critical must target the target of the specific hit.",
+    "description": "A weapon with Auto-fire can be set to shoot in rapid succession and potentially spray an area with bolts, flechettes, slugs, or other types of projectiles. The advantage in using Auto-fire is that it has the chance to hit multiple targets or hit a single target multiple times.\n\nAttacking with a weapon on Auto-fire is generally less accurate and the attacker must increase the difficulty of the attack check by [DI]. The user may choose to not use the Auto-fire quality on a weapon; in this case, he cannot trigger the quality but also does not suffer the aforementioned penalty.\n\nIf the attack hits, the attacker can trigger Auto-fire by spending [AD][AD]. Auto-fire can be triggered multiple times. Each time the attacker triggers auto-fire, it deals an additional hit to the target. Each of these counts as an additional hit from that weapon, and each hit deals base damage plus the number of uncanceled [SU] on the check.\n\nThese additional hits can be allocated to the target, or to other targets within range of the weapon. If the attacker wishes to hit multiple targets, he must decide to do so before making the check. Furthermore, if he wishes to hit multiple targets, his initial target must always be the target with the highest difficulty and highest defense (if this is two separate targets, the GM chooses which target is his initial target). The initial hit must always be against the initial target, subsequent hits generated can be allocated to any of the other designated targets.\n\nAuto-fire weapons can also activate one Critical Injury for each hit generated on the attack per the normal cost; the Critical must target the target of the specific hit.",
     "isBoolean": true,
     "custom": "DescOnly",
     "isQuality": true,
@@ -1100,7 +1100,7 @@
     "type": "Weapon",
     "modDesc": "Breach {0}",
     "qualDesc": "Breach {0}",
-    "description": "Weapons with Breach burn through the toughest armor, and are often heavy weapons or starship weapons.\n\n[P]Breach weapons ignore one point of Armor for every rating of Breach (meaning they also ignore 10 points of soak for every rating of Breach).",
+    "description": "Weapons with Breach burn through the toughest armor, and are often heavy weapons or starship weapons.\n\nBreach weapons ignore one point of Armor for every rating of Breach (meaning they also ignore 10 points of soak for every rating of Breach).",
     "custom": "DescOnly",
     "isQuality": true
   },
@@ -1110,7 +1110,7 @@
     "type": "Weapon",
     "modDesc": "Burn {0}",
     "qualDesc": "Burn {0}",
-    "description": "Weapons with Burn inflict damage over time. If the attack is successful, the target continues to suffer the weapon’s base damage for a number of rounds equal to the weapon’s Burn rating. Damage is applied at the start of each of the target’s actions.\n\n[P]A victim might be able to stop the damage by rolling around on the ground and making an Agility check as an Coordination check action. This is an [B]Average ([DI][DI]) Coordination check[b] on hard surfaces such as the hall of a spaceship, or an [B]Easy ([DI]) Coordination check[b] on grass or soft ground. Jumping into a body of water stops the damage immediately. Both situations assume the flame is from actual combustion rather than a chemical reaction. With the latter, there is usually little the victim can do.",
+    "description": "Weapons with Burn inflict damage over time. If the attack is successful, the target continues to suffer the weapon’s base damage for a number of rounds equal to the weapon’s Burn rating. Damage is applied at the start of each of the target’s actions.\n\nA victim might be able to stop the damage by rolling around on the ground and making an Agility check as an Coordination check action. This is an **Average ([DI][DI]) Coordination check** on hard surfaces such as the hall of a spaceship, or an **Easy ([DI]) Coordination check** on grass or soft ground. Jumping into a body of water stops the damage immediately. Both situations assume the flame is from actual combustion rather than a chemical reaction. With the latter, there is usually little the victim can do.",
     "custom": "DescOnly",
     "isQuality": true,
     "isActiveQuality": true
@@ -1121,7 +1121,7 @@
     "type": "Weapon",
     "modDesc": "Blast {0}",
     "qualDesc": "Blast {0}",
-    "description": "The weapon has a large spread, an explosive blast, or similar area of effect, like the detonation of a grenade or a warhead fired from a missile launcher. If the attack is successful and Blast activates, each character (friend or foe) Engaged with the original target suffers wounds equal to the weapon’s Blast rating (plus an additional wound per Success as usual).\n\n[P]In a relatively small and enclosed area, the Game Master might decide that everyone in the room suffers damage.\n\n[P]If the Blast quality doesn’t activate, the ordnance still detonates, but bad luck or poor aim on the part of the firer (or quick reactions on the part of the victims) means the explosion may not catch anyone else in its radius. However, the user may also trigger Blast if the attack misses, by spending [AD][AD][AD]. In this case, the original target and every target engaged with the original target suffers damage equal to the Blast rating of the weapon.",
+    "description": "The weapon has a large spread, an explosive blast, or similar area of effect, like the detonation of a grenade or a warhead fired from a missile launcher. If the attack is successful and Blast activates, each character (friend or foe) Engaged with the original target suffers wounds equal to the weapon’s Blast rating (plus an additional wound per Success as usual).\n\nIn a relatively small and enclosed area, the Game Master might decide that everyone in the room suffers damage.\n\nIf the Blast quality doesn’t activate, the ordnance still detonates, but bad luck or poor aim on the part of the firer (or quick reactions on the part of the victims) means the explosion may not catch anyone else in its radius. However, the user may also trigger Blast if the attack misses, by spending [AD][AD][AD]. In this case, the original target and every target engaged with the original target suffers damage equal to the Blast rating of the weapon.",
     "custom": "DescOnly",
     "isQuality": true,
     "isActiveQuality": true
@@ -1142,7 +1142,7 @@
     "name": "Cortosis Quality",
     "modDesc": "Cortosis",
     "qualDesc": "Cortosis",
-    "description": "Cortosis is an ore found primarily in the Outer Rim. It is extremely rare and valuable, and was used primarily during the Clone Wars against the Jedi knights. There are two varieties of Cortosis ore. The rarest versions can actually short out a lightsaber’s blade, causing it to fail temporarily. The far more common Cortosis ore is still a miraculous substance, because when molded into armor, it forms an interlocking molecular bond that is extremely resistant to energy weapons.\n\n[P]Weapons with the Cortosis quality are immune to the Sunder quality. Armor with the Cortosis quality makes the wearer’s soak immune to the Pierce and Breach qualities.",
+    "description": "Cortosis is an ore found primarily in the Outer Rim. It is extremely rare and valuable, and was used primarily during the Clone Wars against the Jedi knights. There are two varieties of Cortosis ore. The rarest versions can actually short out a lightsaber’s blade, causing it to fail temporarily. The far more common Cortosis ore is still a miraculous substance, because when molded into armor, it forms an interlocking molecular bond that is extremely resistant to energy weapons.\n\nWeapons with the Cortosis quality are immune to the Sunder quality. Armor with the Cortosis quality makes the wearer’s soak immune to the Pierce and Breach qualities.",
     "isBoolean": true,
     "custom": "DescOnly",
     "isQuality": true
@@ -1193,7 +1193,7 @@
     "type": "Weapon",
     "modDesc": "Ensnare {0}",
     "qualDesc": "Ensnare {0}",
-    "description": "A weapon with Ensnare binds a foe and restricts his movements. When Ensnare is triggered, the target is immobilized (see page 218) for a number of rounds equal to the weapon’s Ensnare rating. An Ensnared target may attempt a [B]Hard ([DI][DI][DI]) Athletics check[b] as his action on his turn to break free from the effect. An immobilized target cannot perform maneuvers.",
+    "description": "A weapon with Ensnare binds a foe and restricts his movements. When Ensnare is triggered, the target is immobilized (see page 218) for a number of rounds equal to the weapon’s Ensnare rating. An Ensnared target may attempt a **Hard ([DI][DI][DI]) Athletics check** as his action on his turn to break free from the effect. An immobilized target cannot perform maneuvers.",
     "custom": "DescOnly",
     "isQuality": true,
     "isActiveQuality": true
@@ -1204,7 +1204,7 @@
     "type": "Weapon",
     "modDesc": "Guided {0}",
     "qualDesc": "Guided {0}",
-    "description": "Certain types of projectiles may benefit from course alterations after being fired—such as guided missiles. If a character misses while firing a Guided weapon and if Guided activates, he may make an attack check at the end of the round. The difficulty of the check is calculated by comparing the weapon’s silhouette of 0 to the silhouette of the target (see page 235), and the check’s Ability dice equal the weapon’s Guided rating. If the test is successful, the weapon strikes the target and damage is dealt normally.\n\n[P]Guided requires [AD][AD][AD] to activate, unless otherwise specified in the weapon’s description. Remember, the Guided effect can activate on its subsequent attacks, representing the projectile continuing to track the target.\n\n[P]“Spoofing” is a countermeasure designed to work against the particular projectile—such as flares designed to draw off an infrared missile. Spoofing directly increases the defense of the target against attacks with the Guided quality.",
+    "description": "Certain types of projectiles may benefit from course alterations after being fired—such as guided missiles. If a character misses while firing a Guided weapon and if Guided activates, he may make an attack check at the end of the round. The difficulty of the check is calculated by comparing the weapon’s silhouette of 0 to the silhouette of the target (see page 235), and the check’s Ability dice equal the weapon’s Guided rating. If the test is successful, the weapon strikes the target and damage is dealt normally.\n\nGuided requires [AD][AD][AD] to activate, unless otherwise specified in the weapon’s description. Remember, the Guided effect can activate on its subsequent attacks, representing the projectile continuing to track the target.\n\n“Spoofing” is a countermeasure designed to work against the particular projectile—such as flares designed to draw off an infrared missile. Spoofing directly increases the defense of the target against attacks with the Guided quality.",
     "custom": "DescOnly",
     "isQuality": true,
     "isActiveQuality": true
@@ -1215,7 +1215,7 @@
     "type": "Weapon",
     "modDesc": "Knockdown",
     "qualDesc": "Knockdown",
-    "description": "When knockdown triggers, the target is knocked prone.\n\n[P]Unless specified otherwise, Knockdown requires [AD][AD] to trigger, plus one additional [AD] per silhouette beyond one.",
+    "description": "When knockdown triggers, the target is knocked prone.\n\nUnless specified otherwise, Knockdown requires [AD][AD] to trigger, plus one additional [AD] per silhouette beyond one.",
     "isBoolean": true,
     "custom": "DescOnly",
     "isQuality": true,
@@ -1268,7 +1268,7 @@
     "type": "Weapon",
     "modDesc": "Linked {0}",
     "qualDesc": "Linked {0}",
-    "description": "Some weapons, like the laser cannons fitted to the Z-95 Headhunter, are designed to fire together at the same target. This increases the possibility of a hit as well as the damage dealt. When firing a linked weapon, on a successful attack, the weapon deals one hit.\n\n[P]The wielder may spend [AD][AD] to gain an additional hit, and may do so a number of times equal to the weapon’s linked rating. Additional hits from linked weapons may only be applied against the original target. Each hit deals the weapon’s base damage plus total [SU] scored on the check.",
+    "description": "Some weapons, like the laser cannons fitted to the Z-95 Headhunter, are designed to fire together at the same target. This increases the possibility of a hit as well as the damage dealt. When firing a linked weapon, on a successful attack, the weapon deals one hit.\n\nThe wielder may spend [AD][AD] to gain an additional hit, and may do so a number of times equal to the weapon’s linked rating. Additional hits from linked weapons may only be applied against the original target. Each hit deals the weapon’s base damage plus total [SU] scored on the check.",
     "isBoolean": false,
     "custom": "DescOnly",
     "isQuality": true,
@@ -1340,7 +1340,7 @@
     "type": "Weapon",
     "modDesc": "Stun Setting",
     "qualDesc": "Stun Setting",
-    "description": "Some weapons deal Stun damage instead of regular damage. In this case, the weapon deals damage as strain instead of wounds. This damage is still reduced by a target’s soak.\n\n[P]A variant of this is a Stun setting. As a free action, the wielder can choose to switch the setting of his weapon to “Stun.” In this case, it does stun damage as described above. When weapons with a stun setting are used to deal stun damage, their range changes to short and cannot be increased.",
+    "description": "Some weapons deal Stun damage instead of regular damage. In this case, the weapon deals damage as strain instead of wounds. This damage is still reduced by a target’s soak.\n\nA variant of this is a Stun setting. As a free action, the wielder can choose to switch the setting of his weapon to “Stun.” In this case, it does stun damage as described above. When weapons with a stun setting are used to deal stun damage, their range changes to short and cannot be increased.",
     "isBoolean": true,
     "custom": "DescOnly",
     "isQuality": true
@@ -1351,7 +1351,7 @@
     "type": "Weapon",
     "modDesc": "Stun Damage",
     "qualDesc": "Stun Damage",
-    "description": "Some weapons deal Stun damage instead of regular damage. In this case, the weapon deals damage as strain instead of wounds. This damage is still reduced by a target’s soak.\n\n[P]A variant of this is a Stun setting. As a free action, the wielder can choose to switch the setting of his weapon to “Stun.” In this case, it does stun damage as described above. When weapons with a stun setting are used to deal stun damage, their range changes to short and cannot be increased.",
+    "description": "Some weapons deal Stun damage instead of regular damage. In this case, the weapon deals damage as strain instead of wounds. This damage is still reduced by a target’s soak.\n\nA variant of this is a Stun setting. As a free action, the wielder can choose to switch the setting of his weapon to “Stun.” In this case, it does stun damage as described above. When weapons with a stun setting are used to deal stun damage, their range changes to short and cannot be increased.",
     "isBoolean": true,
     "custom": "DescOnly",
     "isQuality": true
@@ -1362,7 +1362,7 @@
     "type": "Weapon",
     "modDesc": "Stun Damage (Droid Only)",
     "qualDesc": "Stun Damage (Droid Only)",
-    "description": "Some weapons deal Stun damage instead of regular damage. In this case, the weapon deals damage as strain instead of wounds. This damage is still reduced by a target’s soak.\n\n[P]A variant of this is a Stun setting. As a free action, the wielder can choose to switch the setting of his weapon to “Stun.” In this case, it does stun damage as described above. When weapons with a stun setting are used to deal stun damage, their range changes to short and cannot be increased.",
+    "description": "Some weapons deal Stun damage instead of regular damage. In this case, the weapon deals damage as strain instead of wounds. This damage is still reduced by a target’s soak.\n\nA variant of this is a Stun setting. As a free action, the wielder can choose to switch the setting of his weapon to “Stun.” In this case, it does stun damage as described above. When weapons with a stun setting are used to deal stun damage, their range changes to short and cannot be increased.",
     "isBoolean": true,
     "custom": "DescOnly",
     "isQuality": true
@@ -1373,7 +1373,7 @@
     "type": "Weapon",
     "modDesc": "Sunder",
     "qualDesc": "Sunder",
-    "description": "When activated, the attacker chooses one item openly wielded by the target (such as a weapon, shield, or item on a belt). That item is damaged one step: to Minor if undamaged, from Minor to Moderate, or from Moderate to Major. If a weapon already suffering Major damage is the target of a successful Sunder, it is destroyed.\n\n[P]Sunder requires [AD] to activate. If activated multiple times in the same attack, each can be applied against the same weapon, potentially taking a weapon from undamaged to destroyed in a single attack.",
+    "description": "When activated, the attacker chooses one item openly wielded by the target (such as a weapon, shield, or item on a belt). That item is damaged one step: to Minor if undamaged, from Minor to Moderate, or from Moderate to Major. If a weapon already suffering Major damage is the target of a successful Sunder, it is destroyed.\n\nSunder requires [AD] to activate. If activated multiple times in the same attack, each can be applied against the same weapon, potentially taking a weapon from undamaged to destroyed in a single attack.",
     "isBoolean": true,
     "custom": "DescOnly",
     "isQuality": true,

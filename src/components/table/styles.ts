@@ -51,4 +51,8 @@ export const SearchContainer = styled.div`
     max-width: unset;
     width: 100%;
   }
+
+  .input-wrapper {
+    background: ${props => props.theme.palette.background};
+  }
 `

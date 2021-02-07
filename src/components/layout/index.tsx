@@ -33,6 +33,7 @@ export const Layout: React.FC<LayoutProps> = memo(({ children, meta }) => {
   useEffect(() => {
     Router.events.on('routeChangeStart', () => {
       setExpanded(false)
+      setBodyScroll(false)
     })
   }, [])
 

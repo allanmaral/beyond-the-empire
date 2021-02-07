@@ -50,14 +50,6 @@
             "group": "Weapons"
           }
         ]
-      },
-      {
-        "name": "Gears",
-        "children": []
-      },
-      {
-        "name": "Attachments",
-        "children": []
       }
     ]
   }
